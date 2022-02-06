@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang='ko'>
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+	<title>코딩진행표</title>
+	<link rel='stylesheet' type='text/css' href='css/reset.css'>
+	<link rel='stylesheet' type='text/css' href='css/base.css'>
+	<script type='text/javascript' src='js/dtree.js'></script>
+	<style>
+		body{padding:20px 10px;}
+		ol {list-style-position: inside; padding-left:2px}
+		li {padding:2px}
+		.t_ing {color:#999999}
+		.t_js {color:brown}
+		.t_app {color:#0042ff}
+		.t_app_js {color:#7395d9}
+		.t_confirm {color:#9600ff}
+		.t_confirm_js {color:#40724b}
+		.t_melon {color:#000}
+		.t_modify {color:#ff0000}
+		img{vertical-align:middle}
+	</style>
+</head>
+<body>
+
+<h1 class='c_left'>코딩진행표</h1>
+<h2 class='c_left'>프로세스</h2>
+<ol>
+	<li><span class='t_ing'>작업진행중</span></li> <!-- 상태메시지 : 일반 -->
+	<li><span class='t_js'>스크립트작업</span></li> <!-- 상태메시지 : 스크립트 -->
+	<li><span class='t_melon'>일반</span></li> <!-- 상태메시지 : 일반 -->
+</ol>
+
+<div class='dtree'>
+	<p><a href='javascript: p.openAll();'><img src='img/btn_expand.gif' alt='Expand All' /></a> <a href='javascript: p.closeAll();'><img src='img/btn_collapse.gif' alt='Collapse All' /></a></p>
+	<script type='text/javascript'>
+		var dir = '/coding_list/guide/'
+		var tree1 = {
+			'고려아연' : {
+				'기본결정사항' : {
+					'프로젝트사전 협의사항' : [dir + 'with_back_dev.html',  '일반', 'mainFrame'],
+					'작업 상세규칙'        : [dir + 'checklist_front.html', '일반', 'mainFrame'],
+				},
+				'Guide' : {
+					'Accordian'  	  		: [dir + 'guide_accordian.html',     '일반', 'mainFrame'],
+					'Button'  		  		: [dir + 'guide_button.html',     '일반', 'mainFrame'],
+					'Color'   		  		: [dir + 'guide_color.html',       '일반', 'mainFrame'],
+					'Font'    		  		: [dir + 'guide_font.html',       '일반', 'mainFrame'],
+					'Icon' 		  	  		: [dir + 'guide_icon.html', '일반', 'mainFrame'],
+					'Pagination'      		: [dir + 'guide_pagination.html',     '일반', 'mainFrame'],
+					'Tab' 		  	  		: [dir + 'guide_tab.html', '일반', 'mainFrame'],
+					'Table' 		  		: [dir + 'guide_table.html', '일반', 'mainFrame'],
+					'Tag'   		  		: [dir + 'guide_tag.html',     '일반', 'mainFrame'],
+					'Title' 		  		: [dir + 'guide_title.html', '일반', 'mainFrame'],
+					'Form'     	  			: [dir + 'guide_form.html',       '일반', 'mainFrame'],
+					//'Layout'   	  		: [dir + 'guide_layout.html',     '일반', 'mainFrame'],
+					//'contents' 	  		: [dir + 'guide_contents.html',   '일반', 'mainFrame'],
+					//'Popup' 		  		: [dir + 'guide_popup.html', '일반', 'mainFrame'],
+					//'profile' 	  		: [dir + 'guide_profile.html', '일반', 'mainFrame']
+				},
+			}
+		};
+		var p = new dTree('p', tree1);
+		document.write(p);
+	</script>
+
+
+	<p><a href='javascript: d.openAll();'><img src='img/btn_expand.gif' alt='Expand All' /></a> <a href='javascript: d.closeAll();'><img src='img/btn_collapse.gif' alt='Collapse All' /></a></p>
+	<script type='text/javascript'>
+		var dir = '../html/'
+		var tree = {
+			'메뉴' : { 
+				// '가이드' : {
+				// 	'메인'                    					  : [dir + 'guide.html',     '완료', 'mainFrame'],
+				// 	'서브'                  					  : [dir + 'sub.html',     '완료', 'mainFrame']
+				// },
+				'메인' : {
+					'메인'                				  		  : [dir + 'main.html',     '완료', 'mainFrame'],
+				},
+				'기업소개' : {
+				//	'기업소개'                				  : [dir + //'company/overview.html',     '완료', 'mainFrame'],
+				},
+				'채용정보' : {
+					'채용정보'                 : [dir + 'recruit/list.html',     '완료', 'mainFrame'],
+				},
+				'입사지원' : {
+				//	'입사지원'                  					   : [dir + //'apply/index.html',     '일반', 'mainFrame'],
+				},
+				'인재개발' : {
+				//	'인재개발'                 						   : [dir + //'manpower/index.html',     '일반', 'mainFrame'],
+				},
+				'소통채널' : {
+				//	'소통채널'                 						   : [dir + //'sns/index.html',     '일반', 'mainFrame'],
+				},
+			},
+		}
+		var d = new dTree('d', tree);
+		document.write(d);
+	</script>
+ 
+</div>
+
+</body>
+</html>
+
