@@ -8,7 +8,7 @@
 xmp {margin:0; padding:0; white-space:pre-wrap;font-family:inherit}
 h1.c_left {margin-bottom:10px; padding:7px; border-bottom:1px solid #e9e9e9; color:#999; font-size:15px; line-height:normal}
 h2.c_left {padding:2px; line-height:normal}
-.dtree {margin-top:10px; padding-bottom:50px; color:#999; white-space:nowrap}
+.dtree {margin-top:0; padding-bottom:25px; color:#999; white-space:nowrap}
 .dtree p {text-align:right}
 .dtree a {color:#999; text-decoration:none;}
 .dtree a.node, .dtree a.nodeSel {padding: 1px 2px 1px 2px; white-space:nowrap}
