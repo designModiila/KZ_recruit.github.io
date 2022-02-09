@@ -10,7 +10,7 @@
 
 	<!-- 가이드용 -->
 	<link rel="stylesheet" type="text/css" href="/coding_list/css/base.css">
-	<link rel="stylesheet" type="text/css" href="/coding_list/css/pretty.css">
+	<link rel="stylesheet" type="text/css" href="../css/pretty.css">
 	<link type="text/css" rel="stylesheet" href="/resource/css/common.css" />
 	<!--//  가이드용 -->
 
@@ -31,42 +31,71 @@
 <div id="wrap" class="coding_guide">
 	<h1 class="h1_guide">기본</h1>
 	<div class="dscBox">
-		<h3 class="h3_guide">기본사항</h3>
+		<h3 class="h2_guide">해상도 및 브라우징 관련 내용 정의</h3>
 		<div class="lstDsc">
 			<p><strong></strong> </p>
 		</div>
 
-		<h3 class="h3_guide">기준 해상도</h3>
+		<h3 class="h3_guide">😶기준 해상도</h3>
 		<div class="lstDsc">
-			<p><strong>PC :</strong> 최소 1280px 이상</p>
-			<p><strong>Tablet :</strong> 768px ~ 1024px</p>
-			<p><strong>Mobile :</strong> 360px ~ 736px</p>
+			<table class="guide_table">
+				<thead>
+					<tr>
+						<th scope="col">PC</th>
+						<th scope="col">Tablet</th>
+						<th scope="col">Mobile</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>최소 1280px 이상</td>
+						<td>768px ~ 1024px</td>
+						<td>360px ~ 736px</td>
+					</tr>
+				</tbody>
+			</table>
 			<p>※ 단, 테블릿 고해상도의 경우 가로 버전 시 PC 버전이 보이며, 세로 버전 시 모바일 버전이 보임</p>
 		</div>
 
-		<h3 class="h3_guide">크로스브라우징 범위</h3>
+		<h3 class="h3_guide">😶크로스브라우징 범위</h3>
 		<div class="lstDsc">
-			<dl>
-				<dt><strong>PC</strong></dt>
-				<dd><b>Window</b> :  주 대상 브라우저(Chrome 최신버전), 호환성 브라우저(Internet Explorer 10~11, edge, FireFox 최신버전)</dd>
-				<dd><b>MAC</b> : Safari 최신버전 ※ 애플社에서 2012년 10월이후 윈도우 Safari 지원안함</dd>
-				<dt class="mt-1"><strong>Tablet / Mobile</strong></dt>
-				<dd>모바일 기기에서 제공하는 OS의 기본 브라우저 및 크롬 APP</dd>
-			</dl>
+			<table class="guide_table">
+				<thead>
+					<tr>
+						<th scope="col">PC(Window)</th>
+						<th scope="col">Pc(MAC)</th>
+						<th scope="col">Tablet / Mobile</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<ol>
+								<li>주 대상 브라우저(Chrome 최신버전)</li>
+								<li>호환성 브라우저(Internet Explorer 10~11</li>
+								<li>edge</li>
+								<li>FireFox 최신버전</li>
+						</ol>
+					</td>
+						<td>Safari 최신버전 <br>※ 애플社에서 2012년 10월이후 윈도우 Safari 지원안함</td>
+						<td>3모바일 기기에서 제공하는 OS의 기본 브라우저 및 크롬 APP</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 
-		<h3 class="h3_guide">테스트 단말 (Tablet, mobile)</h3>
+		<h3 class="h3_guide">😶테스트 단말 (Tablet, mobile)</h3>
 		<div class="lstDsc">
 			<p>국내외 모바일 기기 점유율이 가장 높은 순위에 따라 스마트폰 4종, 태블릿 2종에 대하여 테스트 진행<br><u>단말 확정 후 업데이트 예정</u></p>
 		</div>
 
-		<h3 class="h3_guide">DTD / language TYPE / Encoding 선언</h3>
+		<h3 class="h3_guide">😶DTD / language TYPE / Encoding 선언</h3>
 		<pre class="brush: xml;">			&lt;!DOCTYPE html&gt;
 			&lt;html lang="ko"&gt;<!-- 국가별로 영어 [en], 일본어 [ja], 중국어 [zh], 러시아어 [ru], 아랍어 [ar] - 아랍어는 dir 속성 추가제공(dir="rtl")   -->
 			&lt;head&gt;
 			&lt;meta charset="utf-8"&gt;</pre>
 
-		<h3 class="h3_guide">viewport 선언</h3>
+		<h3 class="h3_guide">😶viewport 선언</h3>
 		<pre class="brush: xml;">			&lt;meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"&gt;</pre>
 			<div class="lstDsc">
 			<table class="guide_table">
@@ -107,12 +136,11 @@
 			</table>
 		</div>
 
-		<h3 class="h3_guide">브라우저 다운로드 URL</h3>
+		<h3 class="h3_guide">😶브라우저 다운로드 URL</h3>
 		<div class="lstDsc">
 			<p><strong>Chrome :</strong> <a href="https://www.google.com/chrome/" target="_blank">https://www.google.com/chrome/</a></p>
 			<p><strong>FireFox :</strong> <a href="https://www.mozilla.org/ko/" target="_blank">https://www.mozilla.org/ko/</a></p>
 		</div>
-
 	</div>
 </div>
 <script type="text/javascript" src="/coding_list/js/pretty.js"></script>

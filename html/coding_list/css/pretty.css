@@ -23,6 +23,14 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { background: #393939; }
 
 xmp.prettyprint li:hover { background: #424242; }
 
+.coding_guide { padding: 50px; }
+.lstDsc .guide_table { border: solid 1px #ddd; width: 90%; text-align: left; padding: 10px; }
+.lstDsc .guide_table thead { line-height: 36px; font-size: 15px; }
+.lstDsc .guide_table tbody { line-height: 24px; vertical-align: text-top; }
+.lstDsc { margin-bottom: 70px; }
+.lstDsc .red { color: #600; }
+.lstDsc ol { line-height: 30px; }
+
 @media print {
     xmp.prettyprint { background-color: none }
     xmp .str, xmp .str { color: #060 }
