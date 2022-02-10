@@ -1,5 +1,6 @@
 /* desert scheme ported from vim to google prettify */
 xmp.prettyprint { display: block; background-color: #333 }
+xmp.prettyprint.remarkText {background-color: #fff; color:#404040;}
 xmp .nopre { background-color: none; color: #000 }
 xmp .str { color: #ffa0a0 } /* string  - pink */
 xmp .kwd { color: #f0e68c; font-weight: bold }
