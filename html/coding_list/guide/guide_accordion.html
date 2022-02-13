@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>Accordion Guide</title>
+
+
+	<!-- 사이트에서 실제 사용 -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../assets/css/component.css">
+	<!--// 사이트에서 실제 사용 -->
+
+
+	<!-- 가이드용 -->
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/pretty.css">
+	<!--//  가이드용 -->
+	<!--
+	<script type="text/javascript" src="../../assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/common.js"></script>
+	-->
+	<style>
+		.tag:not(body){
+			align-items : baseline;
+			background : none;
+			display : inline;
+			padding : 0;
+			height : auto;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="wrap" class="coding_guide">
+		<h1 class="h1_guide">Accordion List</h1>
+	
+		<h2 class="h2_guide"> </h2>
+	
+		
+<div class="guide_wrap">
+    <dl class="wrapAccordion">
+        <dt class="accordion"><a href="javascript:void(0);" title="질문입니다"><span class="type">Q</span><p>최종 제출 후 수정은 어떻게 하나요?</p></a></dt>
+        <dd class="accordionContent">
+            <span class="type" title="답변입니다">A</span>
+            <p>먼저, 시스템 상 지원서 최종 제출 후에는 지원자 개인이 지원서를 수정할 수 없습니다.<br>
+                충분히 검토하신 후 최종 제출 바랍니다. (중간 저장 가능합니다)<br>
+                <br>
+                불가피한 이유로 최종 제출 후 수정을 희망하시는 경우에는 1:1 Q&A를 남겨주시면 확인 후 연락드리고 있습니다.<br>
+                다만, 최종 제출 후 수정요청시, 상황에 따라 수정이 불가능하거나 수정 과정에서 최종 제출 기한이 지나는 등의 이슈가 발생할 수 있습니다.<br>
+                이로 인한 불이익은 모두 지원자 본인의 책임이오니, 꼭 검토 후 최종 제출 바랍니다.
+            </p>
+        </dd>
+    </dl>
+
+    <!-- <div class="wrapAccordion">
+        <button class="accordion"><a href="javascript:void(0);" title="질문입니다"><span class="type">Q</span><p>최종 제출 후 수정은 어떻게 하나요?</p></a></button>
+        <div class="accordionContent">
+            <span class="type" title="답변입니다">A</span>
+            <p>먼저, 시스템 상 지원서 최종 제출 후에는 지원자 개인이 지원서를 수정할 수 없습니다.<br>
+                충분히 검토하신 후 최종 제출 바랍니다. (중간 저장 가능합니다)<br>
+                <br>
+                불가피한 이유로 최종 제출 후 수정을 희망하시는 경우에는 1:1 Q&A를 남겨주시면 확인 후 연락드리고 있습니다.<br>
+                다만, 최종 제출 후 수정요청시, 상황에 따라 수정이 불가능하거나 수정 과정에서 최종 제출 기한이 지나는 등의 이슈가 발생할 수 있습니다.<br>
+                이로 인한 불이익은 모두 지원자 본인의 책임이오니, 꼭 검토 후 최종 제출 바랍니다.
+                </p>
+        </div>
+    </div> -->
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the aContent */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active aContent */
+    var aContent = this.nextElementSibling;
+    if (aContent.style.display === "block") {
+        aContent.style.display = "none";
+    } else {
+        aContent.style.display = "block";
+    }
+  });
+}
+</script>
+
+<!-- code 보여 줄 때 사용 -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+    <div class="wrapAccordion">
+        <button class="accordion"><a href="javascript:void(0);" title="질문입니다"><span class="type">Q</span><p>최종 제출 후 수정은 어떻게 하나요?</p></a></button>
+        <div class="accordionContent">
+            <span class="type" title="답변입니다">A</span>
+            <p>먼저, 시스템 상 지원서 최종 제출 후에는 지원자 개인이 지원서를 수정할 수 없습니다.<br>
+                충분히 검토하신 후 최종 제출 바랍니다. (중간 저장 가능합니다)<br>
+                <br>
+                불가피한 이유로 최종 제출 후 수정을 희망하시는 경우에는 1:1 Q&A를 남겨주시면 확인 후 연락드리고 있습니다.<br>
+                다만, 최종 제출 후 수정요청시, 상황에 따라 수정이 불가능하거나 수정 과정에서 최종 제출 기한이 지나는 등의 이슈가 발생할 수 있습니다.<br>
+                이로 인한 불이익은 모두 지원자 본인의 책임이오니, 꼭 검토 후 최종 제출 바랍니다.
+                </p>
+        </div>
+    </div>
+</xmp>
+</div>
+
+</body>
+<script type="text/javascript" src="/coding_list/js/pretty.js"></script>
+</body>
+</html>

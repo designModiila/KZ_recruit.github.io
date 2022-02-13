@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>Form Guide</title>
+
+
+	<!-- 사이트에서 실제 사용 -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../assets/css/component.css">
+	<!--// 사이트에서 실제 사용 -->
+
+
+	<!-- 가이드용 -->
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/pretty.css">
+	<!--//  가이드용 -->
+	<!--
+	<script type="text/javascript" src="../../assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/common.js"></script>
+	-->
+	<style>
+		.tag:not(body){
+			align-items : baseline;
+			background : none;
+			display : inline;
+			padding : 0;
+			height : auto;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="wrap" class="coding_guide">
+		<h1 class="h1_guide">Form Guide</h1>
+	
+		<h2 class="h2_guide">Select</h2>
+	
+
+<div class="d_desc code remarkText">
+	<xmp class="prettyprint linenums remarkText javascript">
+	/*
+	* 기본 class="select"
+	* FAQ 사용 시 class="input big" big 추가
+	*/
+	</xmp>
+</div>
+
+<div class="guide_wrap">
+	<select name="location" class="select">
+		<option disabled selected>지역</option>
+		<option value="seoul">서울</option>
+		<option value="ulsan">울산</option>
+		<option value="busan">부산</option>
+	</select>
+
+	<select name="location" class="select big">
+		<option disabled selected>지역</option>
+		<option value="seoul">서울</option>
+		<option value="ulsan">울산</option>
+		<option value="busan">부산</option>
+	</select>
+</div>
+
+<!-- code 보여 줄 때 사용 -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+	<select name="location" class="select">
+		<option disabled selected>지역</option>
+		<option value="seoul">서울</option>
+		<option value="ulsan">울산</option>
+		<option value="busan">부산</option>
+	</select>
+
+	<select name="location" class="select big">
+		<option disabled selected>지역</option>
+		<option value="seoul">서울</option>
+		<option value="ulsan">울산</option>
+		<option value="busan">부산</option>
+	</select>
+</xmp>
+</div>
+
+
+
+<div class="d_desc code remarkText">
+	<xmp class="prettyprint linenums remarkText javascript">
+	/*
+	* 기본 class="input"
+	* 2개 병렬로 사용할 시 class="input short" short 추가
+	*/
+	</xmp>
+	</div>
+<h2 class="h2_guide">Input</h2>
+<div class="guide_wrap">
+	<div class="input short">
+		<label for="inputData">이름</label>
+		<img src="../../assets/images/recruit/icon_required.png" alt="필수 입력값 표시"/>
+		<input type="text" id="inputData" name="inputData">
+		<div class="errorMessage">정보가 일치하지 않습니다.</div>
+	</div>
+
+	<div class="input">
+		<label for="inputData">이메일</label>
+		<img src="../../assets/images/recruit/icon_required.png" alt="필수 입력값 표시"/>
+		<input type="email" id="inputData" name="inputData" disabled required>
+		<div class="errorMessage">정보가 일치하지 않습니다.</div>
+	</div>
+
+	<div class="input error">
+		<label for="inputData">이메일</label>
+		<img src="../../assets/images/recruit/icon_required.png" alt="필수 입력값 표시"/>
+		<input type="email" id="inputData" name="inputData" required>
+		<div class="errorMessage">정보가 일치하지 않습니다.</div>
+	</div>
+</div>
+
+<!-- code 보여 줄 때 사용 -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+	<div class="input short">
+		<label for="inputData">이름</label>
+		<img src="../../assets/images/recruit/icon_required.png" alt="필수 입력값 표시"/>
+		<input type="text" id="inputData" name="inputData">
+		<div class="errorMessage">정보가 일치하지 않습니다.</div>
+	</div>
+
+	<div class="input">
+		<label for="inputData">이메일</label>
+		<img src="../../assets/images/recruit/icon_required.png" alt="필수 입력값 표시"/>
+		<input type="email" id="inputData" name="inputData" disabled required>
+		<div class="errorMessage">정보가 일치하지 않습니다.</div>
+	</div>
+
+	<div class="input error">
+		<label for="inputData">이메일</label>
+		<img src="../../assets/images/recruit/icon_required.png" alt="필수 입력값 표시"/>
+		<input type="email" id="inputData" name="inputData" required>
+		<div class="errorMessage">정보가 일치하지 않습니다.</div>
+	</div>
+</xmp>
+</div>
+
+</body>
+<script type="text/javascript" src="/coding_list/js/pretty.js"></script>
+</body>
+</html>

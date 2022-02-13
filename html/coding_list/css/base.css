@@ -28,10 +28,10 @@ h2.c_left {padding:2px; line-height:normal}
 .coding_guide dl.notice ol	{list-style-type:decimal; list-style-position:inside}
 .coding_guide dl.notice li {padding:2px;;list-style-type:decimal; list-style-position:inside}
 .coding_guide dl.notice ul li {margin-left:10px}
-.coding_guide .guide_wrap {width:100%;padding:0 20px 20px 20px;box-sizing:border-box}
+.coding_guide .guide_wrap {width:100%; padding:0 20px 20px 20px; margin-bottom: 10px; box-sizing:border-box;  }
 .coding_guide .d_desc {margin:0 20px 20px 20px; padding:9px; border:1px dashed #bdbfc2; background:#f5f5f5; font-size:12px; line-height:15px}
 .coding_guide .d_desc.remarkText {border:none;}
-.coding_guide .d_desc.code {padding:0;}
+.coding_guide .d_desc.code {padding:0; margin-bottom: 30px;}
 .coding_guide .d_desc .num_list {padding-left:20px; list-style-type:decimal;}
 .coding_guide .d_desc .num_list li {padding:0 0 5px 0;}
 .coding_guide .t_point {margin:0 0 7px; padding-bottom:5px; border-bottom:1px solid #E5E5E5}

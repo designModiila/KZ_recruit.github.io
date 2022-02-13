@@ -37,6 +37,10 @@
 /*
  * 기본 class="num"
  * 활성화 class="num active" active 추가
+
+ * 페이지 1~9개 : 처음/이전/다음/끝 버튼 display: none; 처리
+ * 10페이지 : 이전/다음 버튼만 보이게 처리, 처음/끝 display: none; 처리
+ * 10페이지 이상 : 처음/이전/다음/끝 버튼 display: block; 처리
  */
 </xmp>
 </div>
@@ -44,7 +48,7 @@
 <div class="pagination">
 	<a href="#" title="페이지 맨 앞으로 이동" class="arrow arrowFirst">처음</a>
 	<a href="#" title="이전 페이지로 이동" class="arrow arrowPrev">이전</a>
-	<a href="#" class="num active">1</a>
+	<a href="#" class="num">1</a>
 	<a href="#" class="num">2</a>
 	<a href="#" class="num">3</a>
 	<a href="#" class="num">4</a>
@@ -53,7 +57,7 @@
 	<a href="#" class="num">7</a>
 	<a href="#" class="num">8</a>
 	<a href="#" class="num">9</a>
-	<a href="#" class="num">10</a>
+	<a href="#" class="num active">10</a>
 	<a href="#" title="다음 페이지로 이동" class="arrow arrowNext">다음</a>
 	<a href="#" title="페이지 맨 뒤로 이동" class="arrow arrowEnd">끝</a>
 </div>

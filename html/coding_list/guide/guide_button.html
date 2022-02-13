@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>Button Guide</title>
+
+
+	<!-- 사이트에서 실제 사용 -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../assets/css/component.css">
+	<!--// 사이트에서 실제 사용 -->
+
+
+	<!-- 가이드용 -->
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/pretty.css">
+	<!--//  가이드용 -->
+	<!--
+	<script type="text/javascript" src="../../assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/common.js"></script>
+	-->
+	<style>
+		.tag:not(body){
+			align-items : baseline;
+			background : none;
+			display : inline;
+			padding : 0;
+			height : auto;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="wrap" class="coding_guide">
+		<h1 class="h1_guide">Button Guide</h1>
+
+<div class="d_desc code remarkText">
+	<xmp class="prettyprint linenums remarkText javascript">
+	/*
+	* 상태 : Default / Hover / Pressed / Disabled
+	* 아래 규칙들이 조합되어 구성됩니다
+
+	* 형태 규칙 : Square or Round
+	* 크기 규칙 : Large(L) or Medium(M) or Small(디자인 진행중)
+	* 타입 규칙 : Default/Without Icon or With Icon(Icon)
+	* 색상 규칙 : Filled(01) or Outline(02)
+	
+	네이밍 규칙 : .btn+형태+타입+크기+숫자 (예: btnRoundL01, btnSquareIconL02 등)
+	*/
+	</xmp>
+</div>
+
+<h2 class="h2_guide">Button Square Large</h2>
+<div class="guide_wrap">
+	<button type="button" class="btnSquareL01">지원서 작성</button>
+	<button type="button" class="btnSquareL01 disabled">지원서 작성</button>
+	<button type="button" class="btnSquareL02">목록</button>
+	<button type="button" class="btnSquareL02 disabled">목록</button>
+</div>
+
+<!-- code 보여 줄 때 사용 -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+	<button type="button" class="btnSquareL01">지원서 작성</button>
+	<button type="button" class="btnSquareL01 disabled">지원서 작성</button>
+	<button type="button" class="btnSquareL02">목록</button>
+	<button type="button" class="btnSquareL02 disabled">목록</button>
+</xmp>
+</div>
+
+
+
+<h2 class="h2_guide">Button Round Large</h2>
+<div class="guide_wrap">
+	<button type="button" class="btnRoundL01">지원서 작성</button>
+	<button type="button" class="btnRoundL01 disabled">지원서 작성</button>
+	<button type="button" class="btnRoundL02">목록</button>
+	<button type="button" class="btnRoundL02 disabled">목록</button>
+</div>
+
+<!-- code 보여 줄 때 사용 -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+	<button type="button" class="btnRoundL01">지원서 작성</button>
+	<button type="button" class="btnRoundL01 disabled">지원서 작성</button>
+	<button type="button" class="btnRoundL02">목록</button>
+	<button type="button" class="btnRoundL02 disabled">목록</button>
+</xmp>
+</div>
+
+
+
+<h2 class="h2_guide">Button Square Medium</h2>
+<div class="guide_wrap">
+	<button type="button" class="btnSquareM01">지원서 작성</button>
+	<button type="button" class="btnSquareM01 disabled">지원서 작성</button>
+	<button type="button" class="btnSquareM02">목록</button>
+	<button type="button" class="btnSquareM02 disabled">목록</button>
+</div>
+
+<!-- code 보여 줄 때 사용 -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+	<button type="button" class="btnSquareM01">지원서 작성</button>
+	<button type="button" class="btnSquareM01 disabled">지원서 작성</button>
+	<button type="button" class="btnSquareM02">목록</button>
+	<button type="button" class="btnSquareM02 disabled">목록</button>
+</xmp>
+</div>
+
+
+
+<h2 class="h2_guide">Button Round Medium</h2>
+<div class="guide_wrap">
+	<button type="button" class="btnRoundM02">목록</button>
+	<button type="button" class="btnRoundM02 disabled">목록</button>
+</div>
+
+<!-- code 보여 줄 때 사용 -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+	<button type="button" class="btnRoundM02">목록</button>
+	<button type="button" class="btnRoundM02 disabled">목록</button>
+</xmp>
+</div>
+
+
+
+<h2 class="h2_guide">Button Square Icon Large</h2>
+<div class="guide_wrap">
+	<button type="button" class="btnSquareIconL01">지원서 작성</button>
+	<button type="button" class="btnSquareIconL01 disabled">지원서 작성</button>
+	<button type="button" class="btnSquareIconL02">목록</button>
+	<button type="button" class="btnSquareIconL02 disabled">목록</button>
+</div>
+
+<!-- code 보여 줄 때 사용 -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+	<button type="button" class="btnSquareIconL01">지원서 작성</button>
+	<button type="button" class="btnSquareIconL01 disabled">지원서 작성</button>
+	<button type="button" class="btnSquareIconL02">목록</button>
+	<button type="button" class="btnSquareIconL02 disabled">목록</button>
+</xmp>
+</div>
+
+
+
+<h2 class="h2_guide">Button Round Icon Large</h2>
+<div class="guide_wrap">
+	<button type="button" class="btnRoundIconL01">지원서 작성</button>
+	<button type="button" class="btnRoundIconL01 disabled">지원서 작성</button>
+	<button type="button" class="btnRoundIconL02">목록</button>
+	<button type="button" class="btnRoundIconL02 disabled">목록</button>
+</div>
+
+<!-- code 보여 줄 때 사용 -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+	<button type="button" class="btnRoundIconL01">지원서 작성</button>
+	<button type="button" class="btnRoundIconL01 disabled">지원서 작성</button>
+	<button type="button" class="btnRoundIconL02">목록</button>
+	<button type="button" class="btnRoundIconL02 disabled">목록</button>
+</xmp>
+</div>
+
+
+
+<h2 class="h2_guide">Button Square Icon Medium</h2>
+<div class="guide_wrap">
+	<button type="button" class="btnSquareIconM01">지원서 작성</button>
+	<button type="button" class="btnSquareIconM01 disabled">지원서 작성</button>
+	<button type="button" class="btnSquareIconM02">목록</button>
+	<button type="button" class="btnSquareIconM02 disabled">목록</button>
+</div>
+
+<!-- code 보여 줄 때 사용 -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+	<button type="button" class="btnSquareIconM01">지원서 작성</button>
+	<button type="button" class="btnSquareIconM01 disabled">지원서 작성</button>
+	<button type="button" class="btnSquareIconM02">목록</button>
+	<button type="button" class="btnSquareIconM02 disabled">목록</button>
+</xmp>
+</div>
+
+
+
+<h2 class="h2_guide">Button Round Icon Medium</h2>
+<div class="guide_wrap">
+	<button type="button" class="btnRoundIconM02">목록</button>
+	<button type="button" class="btnRoundIconM02 disabled">목록</button>
+</div>
+
+<!-- code 보여 줄 때 사용 -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+	<button type="button" class="btnRoundIconM02">목록</button>
+	<button type="button" class="btnRoundIconM02 disabled">목록</button>
+</xmp>
+</div>
+
+
+
+</body>
+<script type="text/javascript" src="/coding_list/js/pretty.js"></script>
+</body>
+</html>
