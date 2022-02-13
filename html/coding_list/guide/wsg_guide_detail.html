@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>프로젝트사전협의사항</title>
+
+	<!-- 가이드용 -->
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/pretty.css">
+	<!--//  가이드용 -->
+	<!--
+	<script type="text/javascript" src="../../assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/common.js"></script>
+	-->
+
+	<script type="text/javascript" src="/npass/lib/jquery/jquery.min.js"></script>
+	<style>
+		.tag:not(body){
+			align-items : baseline;
+			background : none;
+			display : inline;
+			padding : 0;
+			height : auto;
+		}
+	</style>
+</head>
+<body>
+
+
+	<div id="wrap" class="coding_guide">
+		<h1 class="h1_guide">상세규칙</h1>
+
+		<h2 clss="h2_guide">공통</h2>
+		<h3 class="h3_guide">*네이밍 규칙</h3>
+		<div class="lstDsc">
+			<p>1. 내부 퍼블리셔는 <span class="red">카멜케이스를 기본원칙</span>으로 하고, 외부 플러그인으로 인한 클래스는 예외로 적용한다</p>
+			<table class="guide_table">
+				<thead>
+					<tr>
+						<th scope="col">예시</th>
+						<th scope="col">설명</th>
+						<th scope="col">비고</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>gnbHeader</td>
+						<td>'-','_'를 사용하지 않고 이어지는 단어의 첫글자를 대문자로 사용한다</td>
+						<td>카멜케이스(Camel Case)</td>
+					</tr>
+					<tr>
+						<td>fp-auto-height</td>
+						<td>모든 단어를 소문자로 사용하고, 단어와 단어 사이는 바(-)로 연결한다</td>
+						<td>케밥 케이스(Kebab Case)</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>2. 네이밍의 시작은 <span class="red">영문 소문자로만 시작</span>한다</p>
+			<table class="guide_table">
+				<thead>
+					<tr>
+						<th scope="col">잘못된 예시</th>
+						<th scope="col">올바른 예시</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Btn</td>
+						<td>btn</td>
+					</tr>
+					<tr>
+						<td>1btn</td>
+						<td>btn1</td>
+					</tr>
+					<tr>
+						<td>_btn</td>
+						<td>btn</td>
+					</tr>
+					<tr>
+						<td>btn_</td>
+						<td>btn</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<h2 class="h2_guide">HTML</h2>
+		
+		<div class="dscBox">
+			<h3 class="h3_guide">*html 구조에 따른 주요 class 네이밍 규칙</h3>
+			<div class="lstDsc">
+				<ol>
+					<li>상단 머리글 부분은 header 태그, <span class="red">.header</span> 클래스명을 사용하였으며, 메뉴 부분은 nav 태그를 사용하고 <span class="red">.gnbHeader</span> 클래스명을 사용한다</li>
+					<li>중간 컨텐츠 영역은 각 영역에 <span class="red">.section</span> 클래스명을 공통으로 사용한다</li>
+					<li>하단 바닥글 부분은 <span class="red">.footer</span> 클래스명을 사용한다</li>
+				</ol>
+			</div>
+	
+			<h3 class="h3_guide">*HTML 파일명 규칙</h3>
+			<div class="lstDsc">
+				<ol>
+					<li><span class="red">'서비스영문메뉴이름.html'</span>을 원칙으로 한다 (예: main.html)</li>
+					<li>추가적인 설명이 필요한 경우 '서비스영문메뉴이름'뒤에 <span class="red">언더바(_)를 붙여서 작성</span>한다 (예: main_mobile.html)</li>
+				</ol>
+				<table class="guide_table">
+					<thead>
+						<tr>
+							<th scope="col">분류</th>
+							<th scope="col">파일명</th>
+							<th scope="col">페이지명</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan='4'>HTML</td>
+							<td>main.html</td>
+							<td>고려아연 채용 메인페이지</td>
+						</tr>
+						<tr>
+							<td>list.html</td>
+							<td>고려아연 채용 > 채용정보 > 채용공고 페이지</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<h3 class="h3_guide">*전체 폴더구조</h3>
+			<div class="lstDsc">
+				<table class="guide_table">
+					<thead>
+						<tr>
+							<th scope="col">폴더분류</th>
+							<th scope="col">폴더명 및 파일</th>
+							<th scope="col">해당 폴더 및 파일에 대한 설명</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>html</td>
+							<td>main.html/recruit</td>
+							<td>각 메뉴의 html 또는 해당 html이 두개 이상일 경우 해당 이름의 서비스 폴더를 생성하여 관리한다</td>
+						</tr>
+						<tr>
+							<td>assets</td>
+							<td>css/fonts/images/js/plugin</td>
+							<td>css,폰트,이미지리소스,js,plugin 등으로 나눠져있다<br>images 안에는 common, main, recurit 등 공통 리소스 폴더와 해당 메뉴의 이미지리소스 폴더로 나뉜다 </td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<h3 class="h3_guide">*폴더구조</h3>
+			<div class="lstDsc">
+				<ol type="1">
+					<li><strong><span class="red">html/</span>main.html :</strong> 고려아연 채용 메인페이지</li>
+					<li><strong><span class="red">html/recruit/</span>list.html :</strong> 고려아연 채용 > 채용정보 > 채용공고</li>
+				</ol>
+			</div>
+		</div>
+		<h2 class="h2_guide">CSS</h2>
+		<div class="dscBox">
+			<h3 class="h3_guide">*CSS 작성 규칙</h3>
+			<div class="lstDsc">
+				<p>1. 기본적으로 한가지 스타일은 한 줄에 작성하며, 줄바꿈 시 빈 줄이 생기지 않게 한다</p>
+				<p>2. transition, transform 관련 내용은 줄바꿈하여 사용할 수 있다</p>
+				<p>3. 해당 내용이 어떤 부분의 css인지 주석(예시: /* ----- 비지니스 파트 소개 ----- */)으로 설명해두도록 한다</p>
+				<p>4. 폰트 단위의 사용은 em으로 작성한다</p>
+			</div>
+		</div>
+
+		<div class="dscBox">
+			<h3 class="h3_guide">*폴더구조</h3>
+			<div class="lstDsc">
+				<ol type="1">
+					<li><strong><span class="red">asset/css/</span>animation.css :</strong> 애니메이션 관련 CSS</li>
+					<li><strong><span class="red">asset/css/</span>font.css :</strong> 폰트 관련 CSS</li>
+					<li><strong><span class="red">asset/css/</span>layout.css :</strong> 레이아웃 관련 CSS (Common과 같은 개념)</li>
+					<li><strong><span class="red">asset/css/</span>reset.css :</strong> 스타일 초기화 관련 CSS</li>
+				</ol>
+			</div>
+
+			<h3 class="h3_guide">*스크립트 제어 클래스 명</h3>
+			<div class="lstDsc">
+				<ol>
+					<li>active, on : 선택된 엘리먼트</li>
+
+				</ol>
+			</div>
+
+			<h3 class="h3_guide">*CSS 속성 명 정렬 순서</h3>
+			<div class="lstDsc">
+				<ul>
+					<li>1. display</li>
+					<li>2. float</li>
+					<li>3. position</li>
+					<li>4. z-index</li>
+					<li>5. top</li>
+					<li>6. right</li>
+					<li>7. bottom</li>
+					<li>8. left</li>
+					<li>9. width</li>
+					<li>10. height</li>
+					<li>11. margin</li>
+					<li>12. padding</li>
+					<li>13. 기타 속성</li>
+				</ul>
+			</div>
+		</div>
+
+		<h2 class="h2_guide">JS</h2>
+		<div class="dscBox">
+			<h3 class="h3_guide">*폴더구조</h3>
+			<div class="lstDsc">
+				<ol type="1">
+					<li><strong><span class="red">asset/js/</span>jquery-3.6.0.min.js</strong></li>
+					<li><strong><span class="red">asset/js/</span>ul.js</strong></li>
+				</ol>
+			</div>
+
+			<!-- <h3 class="h3_guide">파일 상세설명</h3>
+			<div class="lstDsc">
+				<p><strong class="cols">Bootstrap</strong><a href="http://bootstrapk.com/" target="_blank">http://bootstrapk.com/</a></p>
+				<p><strong class="cols">Bootstrap 3 Datepicker</strong><a href="https://eonasdan.github.io/bootstrap-datetimepicker/" target="_blank">https://eonasdan.github.io/bootstrap-datetimepicker//</a></p>
+				<p><strong class="cols">mCustomScrollbar</strong>(pc ver : 공통 테이블 스크롤에서 사용)<a href="http://manos.malihu.gr/jquery-custom-content-scroller/" target="_blank">http://manos.malihu.gr/jquery-custom-content-scroller/</a></p>
+				<p><strong class="cols">dynatree</strong>(pc ver : admin 메뉴관리 권한관리 에서 사용)<a href="http://wwwendt.de/tech/dynatree/doc/dynatree-doc.html" target="_blank">http://wwwendt.de/tech/dynatree/doc/dynatree-doc.html/</a></p>
+				<p><strong class="cols">jquery-ui.min : core, Draggable, Droppable</strong>(pc ver : Draggable, Droppable은 timetable에서 사용)<a href="https://jqueryui.com/" target="_blank">https://jqueryui.com/</a></p>
+				<p><strong class="cols">mobileSelect</strong>(mobile ver : 교사검색 사용)<a href="https://nehakadam.github.io/AnyPicker/" target="_blank">https://nehakadam.github.io/AnyPicker/</a></p>
+				<p><strong class="cols">pnotify</strong>(pc ver : 최종 사용 정보에서 사용)<a href="https://sciactive.com/pnotify/#demos-simple" target="_blank">https://sciactive.com/pnotify/#demos-simple</a></p>
+			</div> -->
+
+		</strong></div><strong>
+
+		<h2 class="h2_guide">IMAGE</h2>
+		<div class="dscBox">
+			<h3 class="h3_guide">*확장자</h3>
+			<div class="lstDsc">
+				<p>GIF(X*애니메이션 제외), JPEG(O), PNG8(O), PNG24(O)</p>
+			</div>
+		</div>
+	</strong>
+</div>
+<script type="text/javascript" src="/coding_list/js/pretty.js"></script>
+
+</body>
+</html>

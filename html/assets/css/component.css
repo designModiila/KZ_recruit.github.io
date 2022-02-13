@@ -1,0 +1,60 @@
+@charset "utf-8";
+/************************************************************************
+ * filename : component.css
+ * description : guide component CSS
+ * date :
+************************************************************************/
+
+.ellipsis {white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ellipsisLine2 {overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+
+/* pagination */
+.pagination { display: inline-block; height: 40px; vertical-align: middle; }
+.pagination a { display: inline-block; box-sizing: border-box; text-align: center; text-decoration: none; }
+.pagination .arrow { width: 60px; padding: 6px 17px; border-radius: 8px; font-size : 0.875em; /* 14px */ font-weight : 400; color: #222; line-height: 28px; vertical-align: middle; }
+.pagination .arrow:hover { background-color: #efefef; font-weight: 400; color: #222; }
+.pagination .num { margin: 0 4px; font-size: 1.25em; /* 20px */ font-weight: 300; color: #222; vertical-align: middle; }
+.pagination .num.active { font-weight: 700; }
+
+
+
+/* Accordian Card Type */
+.cardTypeR { display: inline-block; position: relative; width: 410px; padding: 36px 44px; background-color: #FFFFFF; border: 1px solid #EBEBEB; box-sizing: border-box; border-radius: 8px; font-family: "Noto Sans KR", sans-serif; }
+.cardTypeR:hover { box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08); }
+.cardTypeR .badgeGroup>span {font-size: 0.875em; font-weight: 400; line-height: 30px; text-align: center; color: #666; border-radius: 6px; display: inline-block; margin-right:4px;}
+.cardTypeR .badgeGroup .type {background-color: #efefef; min-width:60px;}
+.cardTypeR .badgeGroup .dDay {background-color: #ff7070; width:70px; color:#fff;}
+.cardTypeR .btnShareSns {display: inline-block; position: absolute; top: 36px; right: 36px; width: 30px; height: 30px; background:url(../images/common/icon_share.png) no-repeat center center; text-indent: -999px; overflow: hidden; }
+.cardTypeR .companyName {font-size: 1em; font-weight: 400; color:#444; margin: 16px 0 32px 0;}
+.cardTypeR .subject {font-size: 1.5em; font-weight: 700; color:#333; letter-spacing: -0.05em; max-height: 76px;}
+.cardTypeR .field {font-size: 1.125em; color:#333; font-weight: 400; margin-top:13px; display: block;}
+.cardTypeR .location {font-size: 1.125em; color:#333; font-weight: 400; display: none;}
+.cardTypeR .date {font-size:1em; color:#333; font-weight: 400; display: block; margin-top:32px;}
+
+.cardTypeR.end {} 
+.cardTypeR.end .badgeGroup .type,
+.cardTypeR.end .cardTypeR .companyName,
+.cardTypeR.end .subject,
+.cardTypeR.end .field,
+.cardTypeR.end .location,
+.cardTypeR.end .date {color:#c6c6c6;}
+.cardTypeR.end .dDay {background-color: #C5C5C5;}
+
+
+/* Accordian Card Type */
+.cardType { display: inline-block; position: relative; width: 410px; height: 344px; padding: 36px 44px; background-color: #FFFFFF; border: 1px solid #EBEBEB; box-sizing: border-box; border-radius: 8px; font-family: "Noto Sans KR", sans-serif; }
+.cardType:hover { box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08); }
+.cardType .option { display: inline-block; height: 30px; padding: 0 7px; background-color: #EFEFEF; border-radius: 6px; }
+.cardType span { margin: 0; font-size: 0.875em; /* 14px */ font-weight: 500; line-height: 32px; text-align: center; color: #666; }
+.cardType .option02 { margin-left: 8px; padding: 0 9px; background-color: #C5C5C5; }
+.cardType .option02 span { color: #fff; }
+.cardType .option02.on { background-color: #FF7070; }
+.cardType .shareSns { display: inline-block; position: absolute; top: 36px; right: 36px; width: 30px; height: 30px; }
+.cardType .wrapSns { display: none; position: absolute; top: 72px; right: 24px; padding: 13px 5px; width: 248px; height: 55px; box-sizing: border-box; background-color: #FFFFFF; border: 1px solid #E8E8E8; border-radius: 8px;box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08); }
+.cardType .wrapSns a { width: 28px; height: 28px; }
+.cardType .wrapSns a img { margin: 0 8px; }
+.cardType .infoCo { margin: 16px 0 32px; font-size: 1em; /* 16px */ font-weight: 500; line-height: 30px; color: #444; }
+.cardType .cardTitle { margin-bottom: 8px; font-size: 1.5em; /* 24px */ font-weight: 700; line-height: 34px; color: #444; letter-spacing: -0.07em; }
+.cardType .infoDivision { font-size: 1.125em; /* 18px */ font-weight: 500; line-height: 30px; color: #333; }
+.cardType .infoLocation { font-size: 1.125em; /* 18px */ font-weight: 500; line-height: 30px; color: #333; }
+.cardType .infoDate { position: absolute; bottom: 36px; left: 44px; font-size: 1em; /* 16px */ font-weight: 500; line-height: 30px; color: #333; }

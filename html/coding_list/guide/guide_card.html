@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>Card Guide</title>
+
+
+	<!-- 사이트에서 실제 사용 -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../assets/css/component.css">
+	<!--// 사이트에서 실제 사용 -->
+
+
+	<!-- 가이드용 -->
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/pretty.css">
+	<!--//  가이드용 -->
+	<!--
+	<script type="text/javascript" src="../../assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/common.js"></script>
+	-->
+	<style>
+		.tag:not(body){
+			align-items : baseline;
+			background : none;
+			display : inline;
+			padding : 0;
+			height : auto;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="wrap" class="coding_guide">
+		<h1 class="h1_guide">Card Guide</h1>
+	
+		<h2 class="h2_guide">01. Card Type</h2>
+	
+		
+<div class="d_desc code remarkText">
+<xmp class="prettyprint linenums remarkText javascript">
+/*
+* 기본 class="cardType"
+* 마감시 class="cardType end" end 추가
+*/
+</xmp>
+</div>
+<h3 class="h3_guide">01. 진행중인 공고</h3>
+<div class="guide_wrap">
+	<div class="cardTypeR">
+		<div class="badgeGroup"><span class="type">신입</span> <span class="dDay">오늘마감</span></div>
+		<a class="btnShareSns" href="javascript:void(0);">sns공유</a>
+		<div class="companyName">고려아연 주식회사</div>
+		<div class="subject ellipsisLine2">2022년 고려아연 주식회사 온산제련소 생산직(기능직) 신입사원 채용</div>
+		<span class="field">[생산직/기능직]</span>
+		<span class="location">서울, 울산</span>
+		<span class="date">2021.12.23 ~ 2022.01.14</span>
+	</div>
+
+	<div class="cardTypeR end">
+		<div class="badgeGroup"><span class="type">신입</span> <span class="dDay">마감</span></div>
+		<a class="btnShareSns" href="javascript:void(0);">sns공유</a>
+		<div class="companyName">고려아연 주식회사</div>
+		<div class="subject ellipsisLine2">2022년 고려아연 주식회사 온산제련소 생산직(기능직) 신입사원 채용</div>
+		<span class="field">[생산직/기능직]</span>
+		<span class="location">서울, 울산</span>
+		<span class="date">2021.12.23 ~ 2022.01.14</span>
+	</div>
+
+
+	<div class="cardType">
+		<div class="option option01"><span>신입</span></div>
+		<div class="option option02 on"><span>오늘마감</span></div>
+		<div class="wrapSns">
+			<a href=""><img src="../../assets/images/common/icon_sns_facebook.png" alt=""></a>
+			<a href=""><img src="../../assets/images/common/icon_twitter.png" alt=""></a>
+			<a href=""><img src="../../assets/images/common/icon_band.png" alt=""></a>
+			<a href=""><img src="../../assets/images/common/icon_facebook.png" alt=""></a>
+			<a href=""><img src="../../assets/images/common/icon_facebook.png" alt=""></a>
+		</div>
+		<a class="shareSns" href=""><img src="../../assets/images/common/icon_share.png" alt=""></a>
+		<div class="infoCo">고려아연 주식회사</div>
+		<h4 class="cardTitle">2022년 고려아연 주식회사 온산제련소 생산직(기능직) 신입사원 채용</h4>
+		<span class="infoDivision">[생산직/기능직]</span>
+		<span class="infoLocation">서울, 울산</span>
+		<span class="infoDate">2021.12.23 ~ 2022.01.14</span>
+	</div>
+
+</div>
+
+
+<h3 class="h3_guide">02. 마감된 공고</h3>
+<div class="guide_wrap">
+	<div class="cardType ">
+		<div class="option option01"><span>신입</span></div>
+		<div class="option option02 on"><span>오늘마감</span></div>
+		<div class="wrapSns">
+			<a href=""><img src="../../assets/images/common/icon_sns_facebook.png" alt=""></a>
+			<a href=""><img src="../../assets/images/common/icon_twitter.png" alt=""></a>
+			<a href=""><img src="../../assets/images/common/icon_band.png" alt=""></a>
+			<a href=""><img src="../../assets/images/common/icon_facebook.png" alt=""></a>
+			<a href=""><img src="../../assets/images/common/icon_facebook.png" alt=""></a>
+		</div>
+		<a class="shareSns" href=""><img src="../img/component/ic_share.png" alt=""></a>
+		<div class="infoCo">고려아연 주식회사</div>
+		<h4 class="cardTitle">2022년 고려아연 주식회사 온산제련소 생산직(기능직) 신입사원 채용</h4>
+		<span class="infoDivision">[생산직/기능직]</span>
+		<span class="infoLocation">서울, 울산</span>
+		<span class="infoDate">2021.12.23 ~ 2022.01.14</span>
+	</div>
+
+</div>
+	
+<!-- code 보여 줄 때 사용 -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+<div class="cardTypeOff">
+	<div class="option option01"><span>신입</span></div>
+	<div class="option option02"><span>마감</span></div>
+	<div class="wrapSns">
+		<a href=""><img src="../img/component/ic_sns_facebook.png" alt=""></a>
+		<a href=""><img src="../img/component/ic_sns_twitter.png" alt=""></a>
+		<a href=""><img src="../img/component/ic_sns_band.png" alt=""></a>
+		<a href=""><img src="../img/component/ic_sns_facebook.png" alt=""></a>
+		<a href=""><img src="../img/component/ic_sns_facebook.png" alt=""></a>
+	</div>
+	<a class="shareSns" href=""><img src="../img/component/ic_share.png" alt=""></a>
+	<div class="infoCo">고려아연 주식회사</div>
+	<h4 class="cardTitle">2022년 고려아연 주식회사 온산제련소 생산직(기능직) 신입사원 채용</h4>
+	<span class="infoDivision">[생산직/기능직]</span>
+	<span class="infoLocation">서울, 울산</span>
+	<span class="infoDate">2021.12.23 ~ 2022.01.14</span>
+</div>
+</xmp>
+</div>
+<!-- // code 보여 줄 때 사용 -->
+	
+	</div>
+</body>
+<script type="text/javascript" src="/coding_list/js/pretty.js"></script>
+</body>
+</html>
