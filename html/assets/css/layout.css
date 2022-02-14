@@ -3,6 +3,14 @@
 
 htmal {overflow: auto;}
 
+/* ----- 
+h1 :: .logo
+h2 :: .pageTitle
+h3 :: 
+h4 :: .contentDescription // Cont
+
+----- */
+
 .inner {width:1280px; margin: 0 auto; position: relative;}
 
 /* ----- header ----- */
@@ -143,12 +151,12 @@ htmal {overflow: auto;}
 
 .sub .bg {position: absolute; right: 0; bottom: 0;	top:0;	width: 100%;	height: 700px;	background-size: 100% 100%; background-image: url('../../assets/images/recruit/visual.jpg'); background-repeat: no-repeat; background-position:  center top;		object-fit: cover;}
 .sub .visual .inner {height: 700px; width:1280px; margin: 0 auto;}
-.sub .visual .textWrap {padding-top: 295px;}
-.sub .visual .textWrap .titleEn {font-weight: 700; font-size: 1.5em; color:#fff;}
-.sub .visual .textWrap .titleKr {font-weight: 700; font-size: 3.750em; color:#fff; margin-top: -10px;}
+.sub .visual .pageTitle {padding-top: 295px; font-size: 1em;}
+.sub .visual .pageTitle .titleEn {font-weight: 700; font-size: 1.5em; color:#fff;}
+.sub .visual .pageTitle .titleKr {font-weight: 700; font-size: 3.750em; color:#fff; margin-top: -10px;}
 
 
-.lnb {background: rgba(34, 34, 34, 0.7); margin-top: -70px;}
+.lnb {background: rgba(34, 34, 34, 0.7); margin-top: -70px; position: relative;}
 .lnb .lnbWrap {width: 1280px; height: 70px; margin: 0 auto;}
 
 /* ----- 고려아연 人 ----- */
@@ -296,11 +304,17 @@ htmal {overflow: auto;}
 
 
 
-
-
-
-
-
+.contentWrap .inner {padding:60px 0;}
+.contentWrap .contentTitle{}
+.contentWrap .contentDescription {font-size: 24px; color: #222222; font-weight:700; line-height: 30px; margin-bottom: 40px;}
+.contentWrap .contentBox{}
+.filterWrap {position: relative; min-height: 40px;}
+.filterWrap .sortOption {position: absolute; right:0; bottom:0;}
+.sortOption button {width:40px; height:40px; border-radius: 8px;}
+.sortOption button:hover,
+.sortOption button.active  {background-color:#f3f3f3; }
+.sortOption .btnCardType {background: url('../../assets/images/common/icon_card.png') no-repeat center center;}
+.sortOption .btnListType {background: url('../../assets/images/common/icon_list.png') no-repeat center center;}
 
 /* ---------------------- */
 /* ----- RESPONSIVE ----- */

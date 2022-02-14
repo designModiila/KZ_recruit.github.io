@@ -35,7 +35,7 @@ h2.c_left {padding:2px; line-height:normal}
 .coding_guide .d_desc .num_list {padding-left:20px; list-style-type:decimal;}
 .coding_guide .d_desc .num_list li {padding:0 0 5px 0;}
 .coding_guide .t_point {margin:0 0 7px; padding-bottom:5px; border-bottom:1px solid #E5E5E5}
-
+.coding_guide  button + button {margin:10px;}
 .guide_table {width:100%; border:0 none; border-collapse:collapse;}
 .guide_table th,
 .guide_table td {padding:5px 10px; border:1px solid #ccc;}

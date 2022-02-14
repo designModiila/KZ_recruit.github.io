@@ -7,9 +7,10 @@
 
 .ellipsis {white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .ellipsisLine2 {overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.blind{position: absolute; width: 1px; height: 1px; clip: rect(0 0 0 0); overflow: hidden;}
 
 /* pagination */
-.pagination { display: inline-block; height: 40px; vertical-align: middle; }
+.pagination { height: 40px; vertical-align: middle; text-align: center; }
 .pagination a { display: inline-block; box-sizing: border-box; text-align: center; text-decoration: none; }
 .pagination .arrow { display: none; width: 58px; padding: 6px 16px; border-radius: 2px; font-size : 0.875em; font-weight : 400; color: #222; line-height: 28px; vertical-align: middle; }
 .pagination .arrow:hover { display: none; background-color: #efefef; font-weight: 400; color: #222; }
@@ -20,7 +21,11 @@
 
 
 /* Tag */
-.tag01 { margin-right: 16px; padding: 4px 9px; width: 70px; height: 30px; background-color: #FF7070; color:#fff; font-size: 0.88em; border-radius: 6px; box-sizing: border-box; text-align: center; }
+.badge {padding: 5px 18px;  background-color: #FF7070; color:#fff; font-size: 0.875em; border-radius: 6px; box-sizing: border-box; text-align: center; }
+.badge.end { background-color: #C5C5C5; }
+
+
+.tag01 { margin-right: 16px; padding: 4px 9px; width: 70px; height: 30px; background-color: #FF7070; color:#fff; font-size: 0.875; border-radius: 6px; box-sizing: border-box; text-align: center; }
 .tag01.end { background-color: #C5C5C5; }
 .tag01:last-child { margin-right: 0; }
 .tag02 { margin-right: 12px; padding: 3px 22px 4px 20px; height: 30px; background: #FFFFFF; border: 1px solid #EBEBEB; box-sizing: border-box; border-radius: 19px; color: #333; font-weight: 500; font-size: 0.88em; line-height: 30px;; }
@@ -30,7 +35,7 @@
 
 
 /* Card Type */
-.cardType { position: relative; display: inline-block; position: relative; width: 410px; height: 344px; margin: 0 25px 32px 0; padding: 36px 44px; background-color: #FFFFFF; border: 1px solid #EBEBEB; box-sizing: border-box; border-radius: 8px; font-family: "Noto Sans KR", sans-serif; }
+.cardType { position: relative; display: inline-block; position: relative; width: 410px; height: 344px; margin: 0 25px 32px 0; padding: 36px 44px; background-color: #FFFFFF; border: 1px solid #EBEBEB; box-sizing: border-box; border-radius: 8px;}
 .cardType:nth-child(3n) { margin: 0 0 32px 0; }
 .cardType:hover { box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08); }
 .cardType .dDay { position: absolute; left: 44px; bottom: 36px; }
@@ -42,7 +47,7 @@
 .cardType .subject { margin-bottom: 90px; font-size: 1.5em; font-weight: 700; color:#333; letter-spacing: -0.05em; max-height: 76px;}
 .cardType .date { position: absolute; right: 38px ; bottom: 36px; display: block; font-size:1em; color:#333; font-weight: 400; text-align: right; line-height: 30px; }
 
-.cardType.end {} 
+
 .cardType.end .tagType,
 .cardType.end .companyName,
 .cardType.end .subject,
@@ -51,8 +56,83 @@
 .cardType.end .date { color:#c6c6c6; }
 .cardType.end .dDay { background-color: #C5C5C5; }
 
+
+
+.articleWrap {position: relative; padding: 36px 36px 36px 44px; background-color: #fff; border: solid 1px #ebebeb; box-sizing: border-box;border-radius: 8px;
+    -webkit-transition:-webkit-box-shadow .25s ease-in-out;
+    transition:-webkit-box-shadow .25s ease-in-out;
+    -o-transition:box-shadow .25s ease-in-out;
+    transition:box-shadow .25s ease-in-out;
+    transition:box-shadow .25s ease-in-out,-webkit-box-shadow .25s ease-in-out}
+.articleWrap:hover {cursor: pointer; -webkit-box-shadow:0px 8px 16px rgba(0, 0, 0, 0.08);;box-shadow:0px 8px 16px rgba(0, 0, 0, 0.08);}
+.articleWrap a {display: block;}
+.articleWrap .companyName {display: inline-block; font-size: 1em; font-weight: 400; color:#444; margin-bottom: 0; margin-right:24px; min-height: 30px;}
+.articleWrap .subject {font-size: 1.5em; font-weight: 700; color:#333; letter-spacing: -0.05em;}
+.articleWrap .tagBox {display: inline-block; padding:10px 0 19px 0; margin-left:-4px;}
+.articleWrap .tagBox .tag {display: inline-block; margin: 12px 0 12px 12px; padding: 7px 20px 8px 20px; border: solid 1px #ebebeb; box-sizing: border-box; border-radius: 30px; font-size: 0.875em; color: #333;} 
+.articleWrap .badge {margin-right:24px;}
+.articleWrap .period{font-size:1em; text-align: right; color:#333; position: absolute; right:36px; bottom:36px;}
+.articleWrap .btnShareSns {position: absolute; top: 33px; right: 36px;  width: 30px;  height: 30px;   background: url(../images/common/icon_share.png) no-repeat center center;}
+.articleWrap .btnShareSns:hover {background-color: #ebebeb; border-radius: 50%;}
+
+.articleWrap.end .companyName,
+.articleWrap.end .subject,
+.articleWrap.end .subject a,
+.articleWrap.end .tagBox .tag,
+.articleWrap.end .period { color:#c6c6c6; }
+.articleWrap.end .dDay { background-color: #C5C5C5; }
+
+.announceList{margin-top:120px;}
+.announceList ul {}
+.announceList li {} 
+
+.announceList.cardTypeR {margin-top:120px;}
+.announceList.cardTypeR ul {display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom:120px;}
+.announceList.cardTypeR li { flex: 0 32%; margin-bottom: 2%;}
+.announceList.cardTypeR li .articleWrap .companyName {display: block; margin-bottom: 25px; margin-right:30px; min-height: auto;  }
+.announceList.cardTypeR li .articleWrap .tagBox {display: block; padding:10px 0 19px 0; margin-left:-4px; }
+.announceList.cardTypeR li .articleWrap .tagBox .tag {display: inline-block; margin: 4px 0 4px 4px; padding: 7px 20px 8px 20px; border: solid 1px #ebebeb; box-sizing: border-box; border-radius: 30px; font-size: 0.875em; color: #333;} 
+
+.announceList.cardTypeR li .articleWrap .badge {position: absolute; bottom:36px;}
+.announceList.cardTypeR li .articleWrap .period{min-height: 30px; font-size:1em; text-align: right; color:#333; display: block; position: unset; bottom: unset; right: unset; }
+
+.announceList.listTypeR li .articleWrap .tagBox {padding:0 0 0 0; margin-left:0;  position: absolute; top: 31px;}
+.announceList.listTypeR li .articleWrap .tagBox .tag {display: inline-block; margin: 0 0 0 0; padding: 7px 20px 8px 20px; border: solid 1px #ebebeb; box-sizing: border-box; border-radius: 30px; font-size: 0.875em; color: #333;} 
+
+
+
+
+/* 
+.cardTypeR {position: relative; width: 410px; padding: 36px 36px 36px 44px; background-color: #fff; border: solid 1px #ebebeb; box-sizing: border-box;border-radius: 8px;
+    -webkit-transition:-webkit-box-shadow .25s ease-in-out;
+    transition:-webkit-box-shadow .25s ease-in-out;
+    -o-transition:box-shadow .25s ease-in-out;
+    transition:box-shadow .25s ease-in-out;
+    transition:box-shadow .25s ease-in-out,-webkit-box-shadow .25s ease-in-out}
+.cardTypeR:hover {cursor: pointer; -webkit-box-shadow:0px 8px 16px rgba(0, 0, 0, 0.08);;box-shadow:0px 8px 16px rgba(0, 0, 0, 0.08);}
+.cardTypeR a {display: block;}
+.cardTypeR .companyName {font-size: 1em; font-weight: 400; color:#444; margin-bottom: 25px;}
+.cardTypeR .subject {font-size: 1.5em; font-weight: 700; color:#333; letter-spacing: -0.05em;}
+.cardTypeR .tagBox {padding:10px 0 19px 0; margin-left:-4px;}
+.cardTypeR .tagBox .tag {display: inline-block; margin: 4px 0 4px 4px; padding: 7px 20px 8px 20px; border: solid 1px #ebebeb; box-sizing: border-box; border-radius: 30px; font-size: 0.875em; color: #333;} 
+.cardTypeR .cardFooter {display: flex; justify-content: space-between;}
+.cardTypeR .cardFooter .period{font-size:1em; text-align: right; color:#333;}
+.cardTypeR .btnShareSns {position: absolute; top: 33px; right: 36px;  width: 30px;  height: 30px;   background: url(../images/common/icon_share.png) no-repeat center center;}
+.cardTypeR .btnShareSns:hover {background-color: #ebebeb; border-radius: 50%;}
+.cardTypeR.end .companyName,
+.cardTypeR.end .subject,
+.cardTypeR.end .subject a,
+.cardTypeR.end .tagBox .tag,
+.cardTypeR.end .period { color:#c6c6c6; }
+.cardTypeR.end .dDay { background-color: #C5C5C5; }  */
+
+
+
+
+
+
 /* list Type */
-.listType { display: inline-block; position: relative; width: 100%; margin-bottom: 12px; padding: 28px 36px; background-color: #FFFFFF; border: 1px solid #EBEBEB; box-sizing: border-box; border-radius: 8px; font-family: "Noto Sans KR", sans-serif; }
+.listType { display: inline-block; position: relative; width: 100%; margin-bottom: 12px; padding: 28px 36px; background-color: #FFFFFF; border: 1px solid #EBEBEB; box-sizing: border-box; border-radius: 8px; }
 .listType:hover { box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08); }
 .listType .dDay { margin-right: 0; vertical-align: middle; }
 .listType .badgeGroup { display: inline-block; vertical-align: middle; }
@@ -74,7 +154,7 @@
 
 
 /* Form - Select */
-.select { position: relative; width: 220px; margin-right:8px; padding: 4px 20px; background:url(../images/common/icon_arrow_fill.png) no-repeat 189px center #F3F3F3; line-height: 32px; box-sizing: border-box; border: none; border-radius: 4px; font-size: 1em; font-weight: 300; color: #222;
+.select { position: relative; min-width: 220px; margin-right:8px; padding: 4px 20px; background:url(../images/common/icon_arrow_fill.png) no-repeat 189px center #F3F3F3; line-height: 32px; box-sizing: border-box; border: none; border-radius: 4px; font-size: 1em; font-weight: 300; color: #222;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -105,6 +185,28 @@ select::-ms-expand { display: none; }
 
 
 /* button */
+.btnBlack {background-color:#2f2f2f; box-sizing: border-box; text-align: center; color: #fff; font-size: 1.125em; font-weight: 400; letter-spacing: -0.5px; border:solid 1px #2f2f2f; padding: 11px 32px 12px; border-radius: 2px;}
+.btnBlack:hover {background-color:#111;  border:solid 1px #111;}
+.btnBlack:active {background-color:#2f2f2f;  border:solid 1px #2f2f2f;}
+.btnBlack:disabled, .btnBlack.disabled {background-color: #ebebeb; border:solid 1px #ebebeb; color:#c2c2c2; cursor: default;}
+
+.btnWhite {background-color:#fff; box-sizing: border-box; text-align: center; color: #222; font-size: 1.125em; font-weight: 400; letter-spacing: -0.5px; border:solid 1px #999; padding: 11px 32px 12px; border-radius: 2px;}
+.btnWhite:hover {background-color:#f2f2f2;  border:solid 1px #363636;}
+.btnWhite:active {background-color:#d8d8d8;  border:solid 1px #afafaf;}
+.btnWhite:disabled, .btnWhite.disabled {background-color: #ebebeb; border:solid 1px #d9d9d9; color:#c2c2c2; cursor: default;}
+
+.btnBlack.iconRight, .btnWhite.iconRight {position: relative;padding: 11px 48px 12px 32px;}
+.btnBlack.iconRight::after, .btnWhite.iconRight::after {content: ""; width: 8px; height: 14px; position: absolute; right: 19.25px; top: 19.25px;}
+.btnBlack.iconRight::after {background: url(../images/common/icon_arrow_right_white.png) no-repeat center center;  }
+.btnWhite.iconRight::after {background: url(../images/common/icon_arrow_right_gray.png) no-repeat center center; }
+
+.btnBlack.iconRight:disabled::after, .btnBlack.iconRight.disabled::after {opacity: 0.5; background: url(../images/common/icon_arrow_right_gray.png) no-repeat center center;}
+.btnWhite.iconRight:disabled::after, .btnWhite.iconRight.disabled::after {opacity: 0.37;}
+
+.btnRound {border-radius: 30px;}
+.btnMedium { font-size: 1em; padding: 8px 32px 10px;}
+
+
 /* Without Icon */
 .btnSquareL01 { margin: 0 6px; padding: 9px 32px; height: 52px; background-color: #333; text-align: center; font-size: 1.13em; font-weight: 400; color: #fff; border-radius: 2px; }
 .btnRoundL01 { margin: 0 6px; padding: 9px 32px; height: 52px; background-color: #333; text-align: center; font-size: 1.13em; font-weight: 400; color: #fff; border-radius: 30px; }
@@ -143,6 +245,7 @@ select::-ms-expand { display: none; }
 .btnSquareIconL02.disabled, .btnRoundIconL02.disabled, .btnSquareIconM02.disabled, .btnRoundIconM02.disabled { border: 1px solid #D9D9D9; background:url(../images/common/icon_arrow_right03.png) no-repeat 90% center #EBEBEB; color: #C2C2C2; }
 
 /* Accordion */
+
 .wrapAccordion { margin-bottom: 12px; }
 .accordion { position: relative; padding: 28px 36px; border: 1px solid #EBEBEB; border-radius: 8px; width: 100%; background-color: #fff; color: #333; outline: none; cursor: pointer; text-align: left; transition: 0.4s; }
 .accordion:before { position: absolute; top: 32px; right: 36px; content: url(../images/recruit/icon_arrow.png); }

@@ -35,13 +35,13 @@ input[type=number]::-webkit-inner-spin-button {
     margin: 0;
 }
 
-body {font-family:'Noto Sans KR','Malgun Gothic', dotum, sans-serif; background-color:transparent;-webkit-text-size-adjust:none; font-size: 1em}
+body {font-family:'Noto Sans CJK KR','Malgun Gothic', dotum, sans-serif; background-color:transparent;-webkit-text-size-adjust:none; font-size: 1em}
 
 label, input, button, select, img { font-size:100%; vertical-align:middle; border-radius:0;}
-input, button { margin:0; padding:0; font-family:'Noto Sans KR','Malgun Gothic', dotum, sans-serif;}
+input, button { margin:0; padding:0; font-family:'Noto Sans CJK KR Sans KR','Malgun Gothic', dotum, sans-serif;}
 input[type="submit"] {cursor:pointer;}
 button {cursor:pointer;}
-textarea, select {font-family:'Noto Sans KR','Malgun Gothic', dotum, sans-serif;font-size:1em}
+textarea, select {font-family:'Noto Sans CJK KR','Malgun Gothic', dotum, sans-serif;font-size:1em}
 
 
 img {border:0}
@@ -79,8 +79,8 @@ a, a>span, button, button>span {letter-spacing: 0px;}
     height: 30px;
     color: #fff;
     z-index: 100;
-    line-height: 30px; // text 세로 중앙 정렬
-    top: -30px; // 우선 안보이게 감추기
+    line-height: 30px; 
+    top: -30px;
 }
 /*
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { #wrap { height: 100%; overflow: hidden; } }
