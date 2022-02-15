@@ -12,6 +12,18 @@
        url('../fonts/NotoSans-Thin.otf') format('opentype');
       font-display: swap;
 }
+
+@font-face {
+  font-family: 'Noto Sans CJK KR';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/NotoSans-DemiLight.eot');
+  src: url('../fonts/NotoSans-DemiLight.eot?#iefix') format('embedded-opentype'),
+	   url('../fonts/NotoSans-DemiLight.woff2') format('woff2'),
+       url('../fonts/NotoSans-DemiLight.woff') format('woff'),
+       url('../fonts/NotoSans-DemiLight.otf') format('opentype');
+  font-display: swap;
+}
 @font-face {
   font-family: 'Noto Sans CJK KR';
   font-style: normal;
@@ -23,6 +35,7 @@
        url('../fonts/NotoSans-Light.otf') format('opentype');
   font-display: swap;
 }
+
 @font-face {
    font-family: 'Noto Sans CJK KR';
    font-style: normal;

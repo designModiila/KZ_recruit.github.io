@@ -292,7 +292,7 @@ h4 :: .contentDescription // Cont
 .footer .copyright {font-size: 0.75em; color:#999; font-weight: 700; text-transform: uppercase; margin-top:10px;}
 
 
-.btnTop {position: fixed; bottom:10px; right: 10px; z-index: 10px;}
+.btnTop {position: fixed; bottom:10px; right: 10px; z-index: 10px; display: none;}
 .btnTop button {
     width: 6em;
     height: 6em;
@@ -304,17 +304,28 @@ h4 :: .contentDescription // Cont
 
 
 
-.contentWrap .inner {padding:60px 0;}
+.contentWrap .inner {padding:130px 0;}
 .contentWrap .contentTitle{}
 .contentWrap .contentDescription {font-size: 24px; color: #222222; font-weight:700; line-height: 30px; margin-bottom: 40px;}
 .contentWrap .contentBox{}
+
 .filterWrap {position: relative; min-height: 40px;}
+.filterWrap .filterOption select {min-width:120px !important; cursor: pointer;  background: url(../images/common/icon_arrow_fill.png) no-repeat 92% center #F3F3F3 !important;;}
+
 .filterWrap .sortOption {position: absolute; right:0; bottom:0;}
-.sortOption button {width:40px; height:40px; border-radius: 8px;}
-.sortOption button:hover,
-.sortOption button.active  {background-color:#f3f3f3; }
-.sortOption .btnCardType {background: url('../../assets/images/common/icon_card.png') no-repeat center center;}
-.sortOption .btnListType {background: url('../../assets/images/common/icon_list.png') no-repeat center center;}
+.sortOption button {width:40px; height:40px; border-radius: 8px; background-repeat: no-repeat; background-position: center center;
+  -webkit-transition: background-color ease .25s;
+  -o-transition: background-color ease .25s;
+  -moz-transition: background-color ease .25s4s;
+  transition: background-color ease .25s;}
+
+.sortOption .btnCardType {background-image: url('../../assets/images/common/icon_card.png');}
+.sortOption .btnListType {background-image: url('../../assets/images/common/icon_list.png');}
+.sortOption .btnCardType.active,
+.sortOption .btnCardType:hover {background-image: url('../../assets/images/common/icon_card_fill.png'); background-color:#f3f3f3;}
+.sortOption .btnListType.active,
+.sortOption .btnListType:hover {background-image: url('../../assets/images/common/icon_list_fill.png'); background-color:#f3f3f3;}
+
 
 /* ---------------------- */
 /* ----- RESPONSIVE ----- */
@@ -418,11 +429,11 @@ min-width : 320px  max-width :480px
 
 
 
-.tabNav {display: flex;height: 70px;}
-.tabNav li {display: flex; align-content: stretch; justify-items: stretch;}
-.tabNav .active a {color: #0c3482; background: #ffffff;}
-.tabNav a {display: flex; display: flex;align-content: stretch; align-items: center; padding:  23px 39px; color: #fff; font-weight: 400; font-size:1em;}
-.tabNav a:hover {background: #ffffff; color: #0c3482;}
+/* .lnbWrap .tabNav {display: flex;height: 70px;}
+.lnbWrap .tabNav li {display: flex; align-content: stretch; justify-items: stretch;}
+.lnbWrap .tabNav .active a {color: #0c3482; background: #ffffff;}
+.lnbWrap .tabNav a {display: flex; display: flex;align-content: stretch; align-items: center; padding:  23px 39px; color: #fff; font-weight: 400; font-size:1em; }
+.lnbWrap .tabNav a:hover {background-color: #ffffff; color: #0c3482;} */
 
 .recruitList {}
 .recruitList ul {}
