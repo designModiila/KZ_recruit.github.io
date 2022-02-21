@@ -311,7 +311,7 @@ h4 :: .contentDescription // Cont
 
 .filterWrap {position: relative; min-height: 40px;}
 .filterWrap .filterOption select {min-width:120px !important; cursor: pointer;  background: url(../images/common/icon_arrow_fill.png) no-repeat 92% center #F3F3F3 !important;;}
-
+.filterWrap .filterOption input {width: auto;}
 .filterWrap .sortOption {position: absolute; right:0; bottom:0;}
 .sortOption button {width:40px; height:40px; border-radius: 8px; background-repeat: no-repeat; background-position: center center;
   -webkit-transition: background-color ease .25s;

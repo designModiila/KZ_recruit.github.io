@@ -92,82 +92,133 @@
               </div>
 
               <h4 class="contentDescription">문의하신 내용에 대해서 채용담당자가 빠른 시일 내에 답변해드립니다.              </h4>
-              <div class="filterWrap">
-                <div class="filterOption">
-                  <select class="select">
-                    <option>제목</option>
-                  </select>
-                  <input type="text" class="inputText" />
-                </div>
-              </div>
+              
 
-              <table class="table type-write">
-                <caption>사이버감사 신고하기</caption>
-                <colgroup>
-                  <col class="col-1"><col>
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <th scope="row" class="mo-hide"><span class="title">이메일<span class="bul-must">필수입력</span></span></th>
-                    <td>
-                      <div class="input-box type2">
-                        <div class="flex-wrap">
-                        <input type="text" class="input" placeholder="이메일을 입력하세요.">
-                        <span class="dash">@</span>
-                        <input type="text" class="input emailTxt" id="domainName" placeholder="도메인을 입력하세요" disabled="">
+              <div class="marginTop120">
+                <form method="POST" onsubmit="checkStep2();return false;">
+                  <div class="formField type01">
+                    <div class="columns">
+                      <div class="formGroup">
+                        <div class="formLabel">구분</div>
+                        <div class="formControl">
+                          <div class="customSelectWrap">
+                            <div class="customSelectBox" tabindex="0">
+                              <span class="customSelectText">문의구분을 선택해주세요.</span>
+                            </div>
+                            <ul class="customSelectList" style="display:none;">
+                              <li value="selectOption1" class="customSelectOption selected">문의구분을 선택해주세요.</li>
+                              <li value="selectOption2" class="customSelectOption">회사정보</li>
+                              <li value="selectOption3" class="customSelectOption">채용공고</li>
+                              <li value="selectOption3" class="customSelectOption">지원서접수</li>
+                              <li value="selectOption3" class="customSelectOption">시스템</li>
+                              <li value="selectOption3" class="customSelectOption">일반문의</li>
+                            </ul>
+                            <select class="selectOrigin">
+                              <option value="selectOption1" selected>문의구분을 선택해주세요.</option>
+                              <option value="selectOption2">회사정보</option>
+                              <option value="selectOption2">채용공고</option>
+                              <option value="selectOption2">지원서접수</option>
+                              <option value="selectOption2">시스템</option>
+                              <option value="selectOption2">일반문의</option>
+                            </select>
+                          </div>
                         </div>
-                        <select class="select" onchange="selectEmail();">
-                          <option>이메일 선택</option>
-                          <option>naver.com</option>
-                          <option>daum.net</option>
-                          <option>직접 입력</option>
-                        </select>
                       </div>
-                      <!--div class="input-box half">
-                        <input type="text" class="input" placeholder="이메일을 입력하세요." disabled/>
-                        <span class="dash">@</span>
-                        <select class="select">
-                          <option>이메일 선택</option>
-                          <option>naver.com</option>
-                          <option>daum.net</option>
-                        </select>
+                    </div>
+                    <div class="columns">
+                      <div class="formGroup">
+                        <div class="formLabel">분야</div>
+                        <div class="formControl">
+                          <div class="customSelectWrap">
+                            <div class="customSelectBox" tabindex="0">
+                              <span class="customSelectText">선택하세요</span>
+                            </div>
+                            <ul class="customSelectList" style="display:none;">
+                              <li value="selectOption1" class="customSelectOption">채용공고리스트</li>
+                              <li value="selectOption2" class="customSelectOption">상시채용문의</li>
+                              <li value="selectOption3" class="customSelectOption">일반문의사항</li>
+                            </ul>
+                            <select class="selectOrigin">
+                              <option value="selectOption1" selected>채용공고리스트</option>
+                              <option value="selectOption2">상시채용문의</option>
+                              <option value="selectOption3">일반문의사항</option>
+                            </select>
+                          </div>
+                        </div>
                       </div>
-                      <div class="input-box half">
-                        <input type="text" class="input validation" placeholder="이메일을 입력하세요."/>
-                        <span class="dash">@</span>
-                        <select class="select">
-                          <option>이메일 선택</option>
-                          <option>naver.com</option>
-                          <option>daum.net</option>
-                        </select>
+                    </div>
+                  </div>
+                  <div class="formField type01">
+                    <div class="columns">
+                      <div class="formGroup">
+                        <div class="formLabel">이름<abbr class="formRequired" title="필수"><span class="blind">필수</span></abbr></div>
+                        <div class="formControl">
+                          <input type="text" class="inputText" />
+                        </div>
                       </div>
-                      <div class="error-msg"><em>이름을 입력하세요.</em></div-->
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" class="mo-hide"><span class="title">제목 1<span class="bul-must">필수입력 1</span></span></th>
-                    <td>
-                      <input type="text" class="input" placeholder="제목을 입력하세요.">
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" class="mo-hide"><span class="title">내용<span class="bul-must">필수입력</span></span></th>
-                    <td>
-                      <textarea class="textarea" rows="25" placeholder="내용을 입력하세요."></textarea>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" class="mo-hide"><span class="title">첨부파일</span></th>
-                    <td>
-                      <div class="attr-box">
-                        <input type="text" class="input" id="fileName" readonly="">
-                        <input type="file" class="file" onchange="fileLoad(this)">
-                        <button type="button" class="btn-attr">첨부파일</button>
+                    </div>
+                    <div class="columns">
+                      <div class="formGroup">
+                        <div class="formLabel">전화번호<abbr class="formRequired" title="필수"><span class="blind">필수</span></abbr></div>
+                        <div class="formControl">
+                          <input type="text" class="inputText" />
+                        </div>
                       </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                    </div>
+                  </div>
+                  <div class="formField">
+                      <div class="formGroup">
+                        <div class="formLabel">이메일<abbr class="formRequired" title="필수"><span class="blind">필수</span></abbr></div>
+                        <div class="formControl">
+                          <input type="text" class="inputText" />
+                        </div>
+                      </div>
+                    
+                      <div class="formGroup">
+                        <div class="formLabel">제목<abbr class="formRequired" title="필수"><span class="blind">필수</span></abbr></div>
+                        <div class="formControl">
+                          <input type="text" class="inputText" />
+                        </div>
+                      </div>
+          
+                      <div class="formGroup">
+                        <div class="formLabel">내용<abbr class="formRequired" title="필수"><span class="blind">필수</span></abbr></div>
+                        <div class="formControl">
+                          <div class="textArea">
+                            <textarea rows="10"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    
+                      <div class="formGroup">
+                        <div class="formLabel">첨부파일<abbr class="formRequired" title="필수"><span class="blind">필수</span></abbr></div>
+                        <div class="formControl">
+                          <div class="inputFile columns">
+                              <input type="hidden" name="fileno">
+                              <input type="hidden" name="action">
+                              <input type="text" value="" title="첨부 파일명" placeholder="파일을 첨부해주세요" readonly="" class="inputText">
+                              <input type="file" id="fileUploadPop" name="uploadFile" onchange="filePhotoUpload($(this));">
+                              <button class="btnBlack btnMedium btnFileupload" type="button" onclick="">파일첨부</button>
+                            </div>
+                        </div>
+                      </div>
+                    
+                  </div>
+
+                  <div>
+
+                    <span class="inputCheckbox">
+                      <input class="checkAll" type="checkbox" id="checkbox211" name="checkbox211">
+                      <label for="checkbox211"><span class="txt"><span class="notoR">이용 및 개인정보 수집에</span><span class="notoM"> 모두 동의</span><span class="notoR">합니다.</span></span></label></span>
+
+
+                    ‘게시판 운영주체’로서 채용 관련 불만사항 접수 및 민원처리 등의 서비스를 제공하기 위하여 아래와 같은 개인정보를 수집합니다.
+
+
+                  </div>
+                </form>
+              </div>
+              
               
                 
                 
