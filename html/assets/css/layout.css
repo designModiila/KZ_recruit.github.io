@@ -65,8 +65,15 @@ h4 :: .contentDescription // Cont
 
 /* ----- visual ----- */
 
+.visual {    width: 100%;
+  position: relative;
+  top: 0;
+  z-index: 3;
+  height: 100vh; }
+
 /* visual text*/
-.intro {position: relative; margin: 0 auto; width: 1280px; z-index: 5; margin-bottom:100px;   -webkit-transform: translate3d(0,0,0);   -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0);}
+.intro {position: relative; display: flex;     justify-content: flex-start;
+  align-items: center;margin: 0 auto; width: 1280px; height:100vh; z-index: 5; /*margin-bottom:100px;*/   -webkit-transform: translate3d(0,0,0);   -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0);}
 .intro p {color: #fff; font-weight: 700; overflow: hidden; display:block;}
 .intro p span {font-size:3.75em; line-height:1.15em; opacity: .5; overflow: hidden; display: block;}
 .intro p span:nth-child(3) {opacity: 1;}
@@ -149,6 +156,7 @@ h4 :: .contentDescription // Cont
 		background-image: /* our video */;		background-position: center center;		background-size: contain;		object-fit: cover;	z-index:3;}
 /* .visual .bg{position: absolute; right: 0; bottom: 0;	top:0;	width: 100%;	height: 100%;	z-index:4; background: rgba(0, 0, 0, 0.25);} */
 
+.visual.fp-auto-height {height:auto}
 .sub .bg {position: absolute; right: 0; bottom: 0;	top:0;	width: 100%;	height: 700px;	background-size: 100% 100%; background-image: url('../../assets/images/recruit/visual.jpg'); background-repeat: no-repeat; background-position:  center top;		object-fit: cover;}
 .sub .visual .inner {height: 700px; width:1280px; margin: 0 auto;}
 .sub .visual .pageTitle {padding-top: 295px; font-size: 1em;}
@@ -156,7 +164,7 @@ h4 :: .contentDescription // Cont
 .sub .visual .pageTitle .titleKr {font-weight: 700; font-size: 3.750em; color:#fff; margin-top: -10px;}
 
 
-.lnb {background: rgba(34, 34, 34, 0.7); margin-top: -70px; position: relative;}
+.lnb {background: rgba(34, 34, 34, 0.7); margin-top: -70px; position: relative; z-index: 10;}
 .lnb .lnbWrap {width: 1280px; height: 70px; margin: 0 auto;}
 
 /* ----- 고려아연 人 ----- */
@@ -201,6 +209,20 @@ h4 :: .contentDescription // Cont
 
 /* ----- 비지니스 파트 소개 ----- */
 
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .businessWrap {width: 100%; height: 453px; position: relative;}
 .businessWrap::before	{content:''; background: #3C444F; width: 50%;  height: 453px;  position: absolute;}
 .businessWrap .inner {width:1570px; margin: 0 auto; position: relative;}
@@ -221,6 +243,13 @@ h4 :: .contentDescription // Cont
 .businessWrap .fp-controlArrow.fp-next {width: 81px;  height: 75px;  background: #2F85EA;  right: calc(1570px - 489px - 81px); top:91.8%; border-width:0;}
 .businessWrap .fp-controlArrow.fp-next::before {content: ''; display: block; margin: 28px 0 0 34px; width: 4px;height: 14px;background: #FFFFFF;transform: rotate(-45deg);}
 .businessWrap .fp-controlArrow.fp-next::after{content: ''; display: block; margin: -6px 0 0 34px;width: 4px;height: 14px;background: #FFFFFF;transform: rotate(-135deg);}
+
+.businessWrap .swiper-button-prev {width: 81px;  height: 75px;  background: #798494;  left: calc(489px - 81px); top:91.8%; border-width:0;}
+.businessWrap .swiper-button-prev::before {content: ''; display: block; margin: 28px 0 0 34px; width: 4px;height: 14px;background: #FFFFFF;transform: rotate(45deg);}
+.businessWrap .swiper-button-prev::after{content: ''; display: block; margin: -6px 0 0 34px;width: 4px;height: 14px;background: #FFFFFF;transform: rotate(135deg);}
+.businessWrap .swiper-button-next {width: 81px;  height: 75px;  background: #2F85EA;  right: calc(1570px - 489px - 81px); top:91.8%; border-width:0;}
+.businessWrap .swiper-button-next::before {content: ''; display: block; margin: 28px 0 0 34px; width: 4px;height: 14px;background: #FFFFFF;transform: rotate(-45deg);}
+.businessWrap .swiper-button-next::after{content: ''; display: block; margin: -6px 0 0 34px;width: 4px;height: 14px;background: #FFFFFF;transform: rotate(-135deg);}
 
 
 
