@@ -38,6 +38,20 @@
 
     <script type="text/javascript" src="../../assets/js/ui.js"></script>
 
+    <script type="text/javascript">
+      $('#show_agree2').on('click', function () {
+        if ($('#footer_db_zone2').hasClass('on')) {
+            slideUp();
+        } else {
+            slideUp();
+            $('#footer_db_zone2').addClass('on').next().slideDown();
+        }
+        function slideUp() {
+            $('#footer_db_zone2').removeClass('on').next().slideUp();
+        };
+      })
+      </script>
+
   </head>
   <body class="sub">
     <!--<div class="skip"><a href="#contents">본문 바로가기</a></div>-->
@@ -205,26 +219,67 @@
                     
                   </div>
 
-                  <div>
-
+                  <div class="wrapGatherData">
                     <span class="inputCheckbox">
                       <input class="checkAll" type="checkbox" id="checkbox211" name="checkbox211">
-                      <label for="checkbox211"><span class="txt"><span class="notoR">이용 및 개인정보 수집에</span><span class="notoM"> 모두 동의</span><span class="notoR">합니다.</span></span></label></span>
-
-
-                    ‘게시판 운영주체’로서 채용 관련 불만사항 접수 및 민원처리 등의 서비스를 제공하기 위하여 아래와 같은 개인정보를 수집합니다.
-
-
+                      <label for="checkbox211"><span class="txt"><span class="notoR">이용 및 개인정보 수집에</span><span class="notoM"> 모두 동의</span><span class="notoR">합니다.</span></span></label>
+                    </span>
+                    <button type="button" class="buttonAccordion"><span class=”blind”>이용 및 개인정보 수집 내용 더보기</span></button>
+                    <div class="wrapAccordion">
+                      <p class="info">
+                        ‘게시판 운영주체’로서 채용 관련 불만사항 접수 및 민원처리 등의 서비스를 제공하기 위하여 아래와 같은 개인정보를 수집합니다.
+                      </p>
+                      <ol class="wrapOlNumber">
+                        <li>수집항목 및 이용목적
+                          <div class="wrapTable">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>수집구분</th>
+                                        <th>수집 및 이용 목적</th>
+                                        <th>수집 및 이용 목적</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>필수수집</td>
+                                        <td>
+                                          <ul class="wrapUl">
+                                            <li>입사지원서 본인확인 및 개인식별</li>
+                                            <li>불만사항 및 민원에 대한 처리</li>
+                                            <li>무분별한 게시글 작성 방지</li>
+                                            <li>채용관련 안내사항 전달</li>
+                                            <li>통계자료 활용</li>
+                                          </ul>
+                                        </td>
+                                        <td>이름, 전화번호, Email</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                        <li>수집방법
+                          <p>홈페이지 내 이용자 직접입력</p>
+                        </li>
+                        <li>개인정보 보유 및 이용기간
+                          <p>‘문의하기’를 통해 입력한 개인정보는 채용과 관련된 질의분석 및 통계자료로 활용될 예정으로 최대 3년까지 보관되며, 보존기간이 만료되었을 경우 즉시 파기를 진행합니다. 또한, 이용자가 ‘게시판 운영주체’에게 본인의 개인정보 삭제 요청 시 지체 없이 삭제를 진행하고 그에 대한 결과를 통보해 드립니다</p>
+                        </li>
+                        <li>개인정보의 파기방법
+                          <p>전자적 파일형태(DB, PC)로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 파기합니다.<br>종이로 출력된 개인정보는 분쇄기로 분쇄하여 파기합니다.</p>
+                        </li>
+                        <li>정보주체의 권리와 그 사용 방법
+                          <p>지원자는 아래 개인정보 제공 등에 관해 동의하지 않을 권리가 있습니다. 다만, 문의하기를 통해 제공받는 정보는 문의를 처리하기에 필수적인 항목으로 해당 정보를 제공받지 못할 경우 회사는 문의하기에 따른 정상적인 답변을 제공할 수 없습니다.</p>
+                        </li>
+                    </ol>
+                    </div> 
                   </div>
                 </form>
               </div>
               
-              
-                
-                
+              <div class="wrapButton">
+                <button type="button" class="btnWhite" value="button">내용지우기</button>
+                <button type="submit" class="btnBlack"value="Submit">등록</button>
+              </div>
 
-
-    
             </div>
           </div>
         </div>
@@ -307,5 +362,26 @@
       </div>
 
     </div>
+
+    <script>
+    var acc = document.getElementsByClassName("buttonAccordion");
+    var i;
+  
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {	               
+          this.classList.toggle("active");
+
+          var wrapAccordion = this.nextElementSibling;
+          if (wrapAccordion.style.display === "block") {
+            wrapAccordion.style.display = "none";
+          } else {
+            wrapAccordion.style.display = "block";
+          }
+        });
+      }
+    </script>
   </body>
 </html>
+
+
+.marginTop120 .wrapGatherData .inputCheckbox label::after

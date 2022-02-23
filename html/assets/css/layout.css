@@ -295,6 +295,25 @@ h4 :: .contentDescription // Cont
 }
 
 
+/* ----- QnA ----- */
+.marginTop120 .wrapGatherData {margin: 12px 0 0 204px; position: relative;}
+.marginTop120 .wrapGatherData .inputCheckbox {line-height: 32px; cursor:pointer;}
+.marginTop120 .wrapGatherData .inputCheckbox .checkAll {width: 22px; height: 22px;}
+.marginTop120 .wrapGatherData .inputCheckbox input[type="checkbox"]:checked {background-color: #3F4752; border: solid 1px #3F4752;}
+.marginTop120 .wrapGatherData .inputCheckbox label {margin-left: 15px;}
+.marginTop120 .wrapGatherData .buttonAccordion {width: 40px; height: 40px;}
+.marginTop120 .wrapGatherData .buttonAccordion:after {content: '';  position: absolute; top: 0; left: 317px; width:40px; height:40px; background: url(../images/common/icon_arrow_up.png) no-repeat center center; transform: rotate(180deg);}
+.marginTop120 .wrapGatherData .buttonAccordion.active::after {transform: rotate(0deg);}
+.marginTop120 .wrapGatherData .wrapAccordion {display: none;}
+.marginTop120 .wrapGatherData .info {margin-top: 46px;}
+.marginTop120 .wrapGatherData .wrapUl li {font-size: 1em; font-weight: 500; color: #555; line-height: 20px;}
+.marginTop120 .wrapGatherData .wrapOlNumber>li {margin-top: 34px; font-size: 1em; font-weight: 700; line-height: 32px; color: #222;}
+.marginTop120 .wrapGatherData .wrapOlNumber li p {margin-top: 4px; font-size: 1em; font-weight: 400; line-height: 22px; color: #222;}
+.contentWrap .wrapButton {margin-top: 129px; text-align: center;}
+.contentWrap .wrapButton .btnBlack {margin-left: 12px;}
+
+
+
 .footer {background: #F8F8F8; padding: 60px 0;}
 .footer .inner {display:flex; justify-content:space-between; padding-bottom: 40px;}
 .footer .allMenu {}

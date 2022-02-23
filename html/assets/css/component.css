@@ -412,3 +412,16 @@ select::-ms-expand { display: none; }
 
 .guideBox {background-color: #f8f8f8; border-radius:8px; padding: 21px 24px 21px 45px; margin: 0 auto; width: auto; display: inline-block;}
 .guideBox button {margin-left:45px;}
+
+
+/* TABLE */
+.wrapTable table {width: 100%;}
+.wrapTable table, th, td {border: 1px solid #E7E7E7; border-collapse: collapse; text-align: center}
+.wrapTable thead {height: 61px; background-color: #F4F4F4;}
+.wrapTable thead tr th {vertical-align: middle; font-size: 1em; font-weight: 500; color: #222; line-height: 32px;}
+.wrapTable tbody tr td {vertical-align: middle;  font-size: 1em; font-weight: 500; color: #555; line-height: 20px;}
+.wrapTable tbody tr td:nth-child(2) {padding: 39px 0 38px 61px; text-align: left;}
+
+/* LIST */
+.wrapUl {list-style-type: disc;list-style-position: inside;}
+.wrapOlNumber {list-style-type: decimal;list-style-position: inside;}
