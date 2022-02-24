@@ -38,20 +38,6 @@
 
     <script type="text/javascript" src="../../assets/js/ui.js"></script>
 
-    <script type="text/javascript">
-      $('#show_agree2').on('click', function () {
-        if ($('#footer_db_zone2').hasClass('on')) {
-            slideUp();
-        } else {
-            slideUp();
-            $('#footer_db_zone2').addClass('on').next().slideDown();
-        }
-        function slideUp() {
-            $('#footer_db_zone2').removeClass('on').next().slideUp();
-        };
-      })
-      </script>
-
   </head>
   <body class="sub">
     <!--<div class="skip"><a href="#contents">본문 바로가기</a></div>-->
@@ -275,7 +261,7 @@
                 </form>
               </div>
               
-              <div class="wrapButton">
+              <div class="buttonArea">
                 <button type="button" class="btnWhite" value="button">내용지우기</button>
                 <button type="submit" class="btnBlack"value="Submit">등록</button>
               </div>
@@ -382,6 +368,3 @@
     </script>
   </body>
 </html>
-
-
-.marginTop120 .wrapGatherData .inputCheckbox label::after

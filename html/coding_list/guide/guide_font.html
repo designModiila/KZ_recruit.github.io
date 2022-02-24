@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>Font Guide</title>
+
+
+	<!-- 사이트에서 실제 사용 -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../assets/css/component.css">
+	<!--// 사이트에서 실제 사용 -->
+
+
+	<!-- 가이드용 -->
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/pretty.css">
+	<!--//  가이드용 -->
+	<!--
+	<script type="text/javascript" src="../../assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/common.js"></script>
+	-->
+	<style>
+		.tag:not(body){
+			align-items : baseline;
+			background : none;
+			display : inline;
+			padding : 0;
+			height : auto;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="wrap" class="coding_guide">
+		<h1 class="h1_guide">Font Guide</h1>
+
+<div class="d_desc code remarkText">
+	<xmp class="prettyprint remarkText javascript">
+	/*
+	* Noto Sans CJK 웹폰트를 기본 폰트로 하며, 대체 폰트는 다음과 같습니다
+    * body {font-family:'Noto Sans CJK KR','Malgun Gothic', dotum, sans-serif;} 
+
+    * assets/css/font.css에 아래의 코드가 정의되어 있습니다
+	</xmp>
+</div>
+
+<!-- code 보여 줄 때 사용 -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+    @font-face {
+        font-family: 'Noto Sans CJK KR';
+        font-style: normal;
+        font-weight: 100;
+        src: url('../fonts/NotoSans-Thin.eot');
+        src: url('../fonts/NotoSans-Thin.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/NotoSans-Thin.woff2') format('woff2'),
+             url('../fonts/NotoSans-Thin.woff') format('woff'),
+             url('../fonts/NotoSans-Thin.otf') format('opentype');
+            font-display: swap;
+      }
+      
+      @font-face {
+        font-family: 'Noto Sans CJK KR';
+        font-style: normal;
+        font-weight: 200;
+        src: url('../fonts/NotoSans-DemiLight.eot');
+        src: url('../fonts/NotoSans-DemiLight.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/NotoSans-DemiLight.woff2') format('woff2'),
+             url('../fonts/NotoSans-DemiLight.woff') format('woff'),
+             url('../fonts/NotoSans-DemiLight.otf') format('opentype');
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Noto Sans CJK KR';
+        font-style: normal;
+        font-weight: 300;
+        src: url('../fonts/NotoSans-Light.eot');
+        src: url('../fonts/NotoSans-Light.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/NotoSans-Light.woff2') format('woff2'),
+             url('../fonts/NotoSans-Light.woff') format('woff'),
+             url('../fonts/NotoSans-Light.otf') format('opentype');
+        font-display: swap;
+      }
+      
+      @font-face {
+         font-family: 'Noto Sans CJK KR';
+         font-style: normal;
+         font-weight: 400;
+          src: url('../fonts/NotoSans-Regular.eot');
+          src: url('../fonts/NotoSans-Regular.eot?#iefix') format('embedded-opentype'),
+              url('../fonts/NotoSans-Regular.woff2') format('woff2'),
+              url('../fonts/NotoSans-Regular.woff') format('woff'),
+              url('../fonts/NotoSans-Regular.otf') format('opentype');
+              font-display: swap;
+       }
+      @font-face {
+         font-family: 'Noto Sans CJK KR';
+         font-style: normal;
+         font-weight: 500;
+          src: url('../fonts/NotoSans-Medium.eot');
+          src: url('../fonts/NotoSans-Medium.eot?#iefix') format('embedded-opentype'),
+              url('../fonts/NotoSans-Medium.woff2') format('woff2'),
+              url('../fonts/NotoSans-Medium.woff') format('woff'),
+              url('../fonts/NotoSans-Medium.otf') format('opentype');
+              font-display: swap;
+       }
+      @font-face {
+        font-family: 'Noto Sans CJK KR';
+        font-style: normal;
+        font-weight: 700;
+        src: url('../fonts/NotoSans-Bold.eot');
+        src: url('../fonts/NotoSans-Bold.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/NotoSans-Bold.woff2') format('woff2'),
+             url('../fonts/NotoSans-Bold.woff') format('woff'),
+             url('../fonts/NotoSans-Bold.otf') format('opentype');
+           font-display: swap;
+      }
+      
+      @font-face {
+        font-family: 'Noto Sans CJK KR';
+        font-style: normal;
+        font-weight: 900;
+        src: url('../fonts/NotoSans-Black.eot');
+        src: url('../fonts/NotoSans-Black.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/NotoSans-Black.woff2') format('woff2'),
+             url('../fonts/NotoSans-Black.woff') format('woff'),
+             url('../fonts/NotoSans-Black.otf') format('opentype');
+           font-display: swap;
+      }
+</xmp>
+</div>
+
+
+</body>
+<script type="text/javascript" src="../js/pretty.js"></script>
+</body>
+</html>
