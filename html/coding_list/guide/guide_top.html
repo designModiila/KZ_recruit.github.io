@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>Top Button Guide</title>
+
+
+	<!-- 사이트에서 실제 사용 -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../assets/css/component.css">
+	<!--// 사이트에서 실제 사용 -->
+
+
+	<!-- 가이드용 -->
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/pretty.css">
+	<!--//  가이드용 -->
+	<!--
+	<script type="text/javascript" src="../../assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/common.js"></script>
+	-->
+	<style>
+		.tag:not(body){
+			align-items : baseline;
+			background : none;
+			display : inline;
+			padding : 0;
+			height : auto;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="wrap" class="coding_guide">
+		<h1 class="h1_guide">Top Button Guide</h1>
+	
+	
+		
+<div class="d_desc code remarkText">
+<xmp class="prettyprint  remarkText javascript">
+/*
+* 페이지 상단으로 보내는 기능
+*/
+</xmp>
+</div>
+<h3 class="h3_guide">badge</h3>
+<div class="guide_wrap">
+    <span class="badge">D - 13</span><span class="badge">오늘마감</span><span class="badge end">마감</span>
+</div>
+	
+<!-- code 보여 줄 때 사용 -->
+<div class="d_desc code">
+<xmp class="prettyprint linenums javascript">
+    <div class="btnTop">
+        <button type="button" class="btn">Top</button>
+    </div>
+
+    .btnTop {position: fixed; bottom:10px; right: 10px; z-index: 10px; display: none;}
+    .btnTop button {
+        width: 6em;
+        height: 6em;
+        background: #333;
+        color: #fff;
+    }
+</xmp>
+</div>
+
+
+</body>
+<script type="text/javascript" src="../js/pretty.js"></script>
+</body>
+</html>
