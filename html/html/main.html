@@ -52,14 +52,43 @@
       <nav class="gnbHeader">
         <h2 class="hide">대메뉴</h2>
         <ul class="gnb">
-          <li><a href="../html/company/process.html" class="">기업소개</a></li>
-          <li><a href="../html/recruit/process.html" class="">채용정보</a></li>
-          <li><a href="../html/apply/process.html" class="">입사지원</a></li>
-          <li><a href="../html/recruit/process.html" class="">인재개발</a></li>
-          <li><a href="../html/recruit/process.html" class="">소통채널</a></li>
-
+          <li><a href="company/overview.html" class="">기업소개</a>
+            <ul>
+              <li><a href="company/overview.html" class="">기업정보</a></li>
+              <li><a href="company/affiliate.html" class="">계열사 소개</a></li>
+            </ul>
+          </li>
+          <li><a href="recruit/process.html" class="">채용정보</a>
+            <ul>
+              <li><a href="recruit/process.html" class="">채용절차</a></li>
+              <li><a href="recruit/announce.html" class="">채용공고</a></li>
+              <li><a href="recruit/notice.html" class="">채용문의</a></li>
+            </ul>
+          </li>
+          <li><a href="apply/write.html" class="">입사지원</a>
+            <ul>
+              <li><a href="apply/write.html" class="">지원서 작성</a></li>
+              <li><a href="apply/edit.html" class="">지원서 수정</a></li>
+              <li><a href="apply/mypage.html" class="">마이페이지</a></li>
+            </ul>
+          </li>
+          <li><a href="hrsystem/talent.html" class="">인재개발</a>
+            <ul>
+              <li><a href="hrsystem/talent.html" class="">인재상</a></li>
+              <li><a href="hrsystem/hr.html" class="">인사제도</a></li>
+              <li><a href="hrsystem/develop.html" class="">교육제도</a></li>
+              <li><a href="hrsystem/welfare.html" class="">복리후생</a></li>
+              <li><a href="../html/hrsystem/jobIntro.html" class="">부서 및 직무 소개</a></li>
+            </ul> 
+          </li>
+          <li><a href="media/snsList.html" class="">소통채널</a>
+            <ul>
+              <li><a href="media/snsList.html" class="">SNS Channel</a></li>
+              <li><a href="media/interviewList.html" class="">KZ People Story</a></li>
+            </ul>
+          </li>
         </ul>
-        <div class="utilMenu"><button type="button" class="allMenu" /></div>
+        <div class="utilMenu"><button type="button" class="allMenu" ></div>
       </nav>
       </div>
     </header>
@@ -422,6 +451,38 @@
           <button type="button" class="btn">Top</button>
         </div>
     </div>
+
+    <script>
+        var video = document.getElementById('video');
+  var source = document.createElement('source');
+  
+  source.setAttribute('src', '../assets/images/main/recruit.mp4');
+  source.setAttribute('type', 'video/mp4');
+  
+ //video.appendChild(source);
+  video.play();
+
+  const swiper = new Swiper('.swiper-container', { 
+    //기본 셋팅 //방향 셋팅 vertical 수직, horizontal 수평 설정이 없으면 수평 
+     direction: 'horizontal', 
+     //한번에 보여지는 페이지 숫자 
+     slidesPerView: 3, //페이지와 페이지 사이의 간격 
+     spaceBetween: 30, //드레그 기능 true 사용가능 false 사용불가 
+     debugger: false, //마우스 휠기능 true 사용가능 false 사용불가 
+     mousewheel: false, //반복 기능 true 사용가능 false 사용불가 
+     loop: true, //선택된 슬라이드를 중심으로 true 사용가능 false 사용불가 
+    centeredSlides: true, // 페이지 전환효과 slidesPerView효과와 같이 사용 불가 // 
+    effect: 'fade', //자동 스크를링 
+    autoplay: { //시간 1000 이 1초 
+      delay: 2500, disableOnInteraction: false, }, //페이징 
+      pagination: { //페이지 기능 
+        el: '.swiper-pagination', //클릭 가능여부 
+        clickable: true, }, //방향표 
+        navigation: { //다음페이지 설정 
+          nextEl: '.swiper-button-next', //이전페이지 설정 
+          prevEl: '.swiper-button-prev', }, });
+
+    </script>
 
   </body>
 </html>
