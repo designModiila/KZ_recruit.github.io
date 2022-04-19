@@ -71,7 +71,7 @@ h5:: .paraContentTitle // Cont
 .header .gnbHeader .gnb > li:hover > .active::after {content:''; position: absolute; left:0; bottom:0; background-color:#253D95; height:4px; width: 100%;  -webkit-transition:all ease .3s;  -moz-transition:all ease .3s; -ms-transition:all ease .3s; -o-transition:all ease .3s; transition:all ease .3s;}
 
 
-.header .utilMenu {position: absolute; right:0; top:31px;}
+.header .utilMenu {position: absolute; right:0; top:31px; display: none;}
 .header .allMenu {background: url('../../assets/images/common/icon_menu.png') no-repeat center center; width: 30px; height: 40px;}
 
 
@@ -175,8 +175,8 @@ h5:: .paraContentTitle // Cont
 .lnb .lnbWrap {width: 1280px; height: 70px; margin: 0 auto;}
 
 /* ----- 고려아연 人 ----- */
-.kzPeopleWrap {width:1570px; margin: 80px auto; display:flex; justify-content:space-between; align-items:center;}
-.kzPeopleWrap .kzPeopleText {padding-left:45px;}
+.kzPeopleWrap {width:1570px; margin: 80px auto; display:flex; justify-content:space-between; align-items:center; position: relative;}
+.kzPeopleWrap .kzPeopleText {padding-left:45px; margin-top:-145px}
 .kzPeopleWrap .kzPeopleText .peopleTitle {font-size:2.5em; color: #222; font-weight: 700; margin-bottom:18px; margin-top:12px;}
 .kzPeopleWrap .kzPeopleText .peopleDesc {font-size:1.5em; line-height: 1.2em; color: #444; font-weight: 300;}
 .kzPeopleWrap .kzPeopleText .peopleDesc em {font-weight: 400;}
@@ -213,7 +213,7 @@ h5:: .paraContentTitle // Cont
   transform: translate(0, 0);
 }
 
-.kzPeopleWrap .btnMore {font-size:1em; font-weight: 400; border-radius: 20px; border:solid 1px #d5d5d5; box-sizing: border-box; padding: 6px 20px; margin-top:130px;}
+.kzPeopleWrap .btnMore {font-size:1em; font-weight: 400; border-radius: 20px; border:solid 1px #d5d5d5; box-sizing: border-box; padding: 6px 20px; position: absolute; left:45px; top:365px;}
 .kzPeopleWrap .btnMore:hover {border:solid 1px #222; background: #222; color:#fff;}
 
 
@@ -245,7 +245,7 @@ h5:: .paraContentTitle // Cont
 .businessWrap .textWrap dl dt span {display: block;}
 .businessWrap .textWrap dl dt .team {font-size: 1.125em; font-weight: 300; margin-bottom: 3px;}
 .businessWrap .textWrap dl dt .part {font-size: 2em; font-weight: 700;}
-.businessWrap .textWrap dl dd {color:#fff; font-size: 1em; opacity: .8;}
+.businessWrap .textWrap dl dd {color:#fff; font-size: 1em;}
 .businessWrap .textWrap .btnMore {font-size:1em; color:#fff; font-weight: 400; border-radius: 20px; border:solid 1px rgba(255, 255, 255, 0.6); box-sizing: border-box; padding: 6px 45px; margin-top:80px; margin-left: 45px}
 .businessWrap .textWrap .btnMore:hover {border:solid 1px #fff; background: #fff; color:#222;}
 .businessWrap .fp-controlArrow.fp-prev {width: 81px;  height: 75px;  background: #798494;  left: calc(489px - 81px); top:91.8%; border-width:0;}
@@ -426,7 +426,7 @@ min-width : 320px  max-width :480px
 
   .kzPeopleWrap .peopleList {padding-right:0;}
 
-  .businessWrap .inner img {height: 453px; max-width: 1280px;}
+  .businessWrap .swiper-slide .slide-visual img {height: 453px; max-width: 1280px;}
   .businessWrap .fp-controlArrow.fp-next {    right: calc(100% - 489px - 81px);}
 
   .snsWrap .innerWrap {gap:80px}
@@ -455,7 +455,78 @@ min-width : 320px  max-width :480px
 
 
 @media all and (max-width:480px){
+  .inner {width:auto; padding:24px;}
+  .header .inner {width:100%; padding: 0}
+  .header .logo {left:24px;}
+  .header:hover::before {display: none;}
+  .header .gnbHeader .gnb {display: none;}
+  .header .utilMenu {display: block; right:24px; }
+  
+  .intro {width:auto; padding:34px;}
+  .intro p {margin-top:-170px}
+  .intro p span {font-size:1.5em; line-height: 1.28em; font-weight:300;} 
+  .intro p span em { font-weight:600;  margin-top:5px; display: block;}
+  .visual .listWrap {bottom:50px;}
+  .visual .listWrap .list {width:100%;}
+  .visual .listWrap .list ul {flex-direction: column; flex-wrap: nowrap; padding: 34px; gap:16px;}
+  .visual .listWrap .list ul > li {display: block; border-radius: 4px; width:100%; height:48px; padding:0 16px;}
+  .visual .listWrap .list ul > li > a {flex-direction: row-reverse; justify-content: space-between;}
+  .visual .listWrap .list ul > li > a span {font-size:0.875em}
+  .visual .listWrap .list ul > li > a em {font-size:1.5em}
 
+  .kzPeopleWrap {display: block; margin-top:0; text-align: center; }
+  .kzPeopleWrap .kzPeopleText {padding:24px; margin-top:0; text-align: left;}
+  .kzPeopleWrap .kzPeopleText .peopleTitle {font-size:1.250em}
+  .kzPeopleWrap .kzPeopleText .peopleDesc {font-size:1.125em;}
+  .kzPeopleWrap .kzPeopleText .peopleDesc br {display: none;}
+  .kzPeopleWrap .peopleList {gap: 0;}
+  .kzPeopleWrap .peopleList ul {gap:24px; row-gap: 0; justify-content: center;}
+  .kzPeopleWrap .peopleList ul > li {width:40%;}
+  .kzPeopleWrap .peopleList ul > li > a .infoWrap {padding-bottom:15px;}
+  .kzPeopleWrap .btnMore {position: unset; left: unset; top:unset; margin:15px auto 0 auto;}
+  .kzPeopleWrap .peopleList ul > li > a img {width:100%;}
+
+  .businessWrap {background: #3C444F; height:auto;}
+  .businessWrap::before {display: none;} 
+  .businessWrap .inner {padding:0;}
+  .businessWrap .swiper-slide { background: #3C444F;margin:24px; padding:24px; flex-direction: column; opacity: 1;}
+  .businessWrap .swiper-slide .slide-visual {overflow: hidden; margin-top:0; width: auto; text-align: center; position: absolute; left: 24px; right: 24px; top:100px; z-index: 100;}
+  .businessWrap .swiper-slide .slide-visual img {width:auto; max-width: auto !important; height: 120px;}
+  .businessWrap .textWrap {width:100%; height: auto; background: #3C444F; position: unset; z-index: 1;}/* margin-top:-255px; */
+  .businessWrap .textWrap dl {padding:0;}
+  .businessWrap .textWrap dl dt {margin-bottom:24px;}
+  .businessWrap .textWrap dl dt .team {font-size:0.875em;}
+  .businessWrap .textWrap dl dt .part {font-size:1.250em;}
+  .businessWrap .textWrap dl dd {padding-top:144px;font-weight: 400; font-size:0.875em;}
+  .businessWrap .textWrap .btnMore {margin-top:0; margin-left: 0; font-size:0.875em ; margin-top:24px;}
+  .businessWrap .swiper-button-next {right:0; top:0;}
+  .businessWrap .swiper-button-prev {left:0; top:0;}
+  .snsWrap {margin-bottom:40px;}
+  .snsWrap .innerWrap {gap:30px;     flex-direction: column; padding: 24px; }
+  .snsWrap .innerWrap .youtube .desc br {display: none;}
+  .snsWrap .innerWrap iframe {width:100%;}
+  .snsWrap .insta-list ul {gap:16px;}
+  .snsWrap .insta-list ul li {width: calc((100% / 2) - 8px);overflow: hidden;}
+  
+  .recruitInfoWrap .inner h1 {font-size:1.250em;}
+  .recruitInfoWrap .list ul {flex-direction: column;}
+  .recruitInfoWrap .list ul > li img {width:100%; height:auto;}
+  .recruitInfoWrap .list ul > li > a .title {font-size:1em;}
+  .recruitInfoWrap .list ul > li > a .desc {font-size:0.875em;}
+.footer .inner:nth-child(2)
+  .footer {padding:0 0 40px 0;}
+  .footer .inner:first-child {padding:0;}
+  .footer .inner:nth-child(2) {border-top:none; padding-top:20px;}
+  .footer .allMenu {background: #fff; border-top:solid 1px #ddd;;}
+  .footer .allMenu>ul {width:100%}
+  .footer .allMenu>ul>li {border-bottom:solid 1px #efefef; width:100%}
+  .footer .allMenu>ul>li>a {padding:12px 24px; display: block; color:#555; font-size:0.813em}
+
+  .footer .allMenu>ul {flex-direction: column; width:100%; gap: 0;;}
+  .footer .allMenu>ul>li>ul {display: none;; }
+  .footer .utilMenu {padding:24px;}
+  .footer .inner {display: block;}
+  
 }
 
 @media all and (max-width:370px){
@@ -526,3 +597,19 @@ min-width : 320px  max-width :480px
 .mediaWrap .widthFull .title::after {content:''; position: absolute; top:80px; left:0; width:65px; height:3px; background-color: #fff;}
 .mediaWrap .widthFull .desc {color:#fff; font-size:1.125em; font-weight:300;  margin-bottom:42px;}
 .mediaWrap .widthFull .date {color:#fff; font-size:1em; font-weight:300;}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }
