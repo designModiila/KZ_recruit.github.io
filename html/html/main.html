@@ -442,13 +442,15 @@
     centeredSlides: true, // 페이지 전환효과 slidesPerView효과와 같이 사용 불가 // 
     effect: 'fade', //자동 스크를링 
     autoplay: { //시간 1000 이 1초 
-      delay: 2500, disableOnInteraction: false, }, //페이징 
+      delay: 1500, disableOnInteraction: false, }, //페이징 
       pagination: { //페이지 기능 
         el: '.swiper-pagination', //클릭 가능여부 
-        clickable: true, }, //방향표 
+        clickable: true }, //방향표 
         navigation: { //다음페이지 설정 
           nextEl: '.swiper-button-next', //이전페이지 설정 
-          prevEl: '.swiper-button-prev', }, });
+          prevEl: '.swiper-button-prev', }, 
+          
+        });
 
     </script>
 
