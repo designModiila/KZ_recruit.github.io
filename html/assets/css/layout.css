@@ -511,7 +511,6 @@ min-width : 320px  max-width :480px
   .recruitInfoWrap .list ul > li img {width:100%; height:auto;}
   .recruitInfoWrap .list ul > li > a .title {font-size:1em;}
   .recruitInfoWrap .list ul > li > a .desc {font-size:0.875em;}
-.footer .inner:nth-child(2)
   .footer {padding:0 0 40px 0;}
   .footer .inner:first-child {padding:0;}
   .footer .inner:nth-child(2) {border-top:none; padding-top:20px;}
@@ -586,7 +585,6 @@ min-width : 320px  max-width :480px
   .recruitInfoWrap .list ul > li img {width:100%; height:auto;}
   .recruitInfoWrap .list ul > li > a .title {font-size:1em;}
   .recruitInfoWrap .list ul > li > a .desc {font-size:0.875em;}
-.footer .inner:nth-child(2)
   .footer {padding:0 0 40px 0;}
   .footer .inner:first-child {padding:0;}
   .footer .inner:nth-child(2) {border-top:none; padding-top:20px;}
