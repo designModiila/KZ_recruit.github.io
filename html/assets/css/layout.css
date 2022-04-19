@@ -669,7 +669,7 @@ min-width : 320px  max-width :480px
 .mediaWrap .widthFull .desc {color:#fff; font-size:1.125em; font-weight:300;  margin-bottom:42px;}
 .mediaWrap .widthFull .date {color:#fff; font-size:1em; font-weight:300;}
 
-
+/* 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { ... }
 
@@ -683,4 +683,4 @@ min-width : 320px  max-width :480px
 @media (min-width: 1200px) { ... }
 
 // XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) { ... }
+@media (min-width: 1400px) { ... } */
