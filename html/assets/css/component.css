@@ -530,3 +530,203 @@ select::-ms-expand { display: none; }
 .interviewType dl dt {font-size:1.5em; font-weight: 500; margin-bottom:30px;}
 .interviewType dl dt::before{content: 'Q'; font-weight: 900; font-size: 1.5em; margin-right:15px;}
 .interviewType dl dd {color:#666; font-size:1em; font-weight: 400;  padding-left: 45px;}
+
+
+.tabBox nav { margin: 0 auto;
+    background: #fff;}
+.tabs-container nav {
+  margin: 0 auto;
+  background: #fff;
+}
+
+.tabs-container nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding: 0 10px;
+}
+
+.tabs-container nav ul li {
+  padding: 1rem;
+  cursor: pointer;
+  color: #A7A7A7;
+  border-top: 1px solid #eee;
+  margin-left: -10px;
+  margin-right: -10px;
+  
+}
+.tabs-container nav ul li a {    color: #727272;
+  font-weight: 400;
+  font-size: 1.5em;
+  padding: 23px 0 23px 0;
+
+}
+.tabs-container nav ul li:hover {
+  color: #222;
+  border-bottom: solid 5px #222;
+}
+
+.tabs-container nav ul li.active {
+  color: #222;
+  border-top: none;
+  border-bottom: solid 5px #222;
+}
+.tabs-container nav ul li.active {color: #222;}
+.tabs-container nav ul li.active a {color: #222;}
+
+ 
+.tabs-container {
+  position: relative;
+  height: 4em;
+  z-index: 20;;
+}
+
+.tabs-container nav {
+  position: absolute;
+  width: 100%;
+}
+
+.tabs-container nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs-container nav ul li {
+  order: 1;
+}
+
+.tabs-container nav ul li.active {
+  order: 0;
+}
+
+.tabs-container nav ul li.active:after {
+  width: 1px;
+  height: 1px;
+  border: 8px solid transparent;
+  border-top: 8px solid #222;
+  content: "";
+  position: absolute;
+  right: 1.5em;
+  top: 2em;
+  z-index: 9999;
+}
+
+.tabs-container nav ul li:not(.active) {
+  position: absolute;
+  top: -999em;
+}
+.tabs-container nav ul.expanded {}
+.tabs-container nav ul.expanded li:hover {border-bottom:none; color:#222;}
+.tabs-container nav ul.expanded li.active:after {
+  border-top-color: transparent;
+  border-bottom-color: #555;
+  top: 1em;
+}
+
+.tabs-container nav ul.expanded li:not(.active) {
+  position: relative;
+  top: auto;
+}
+
+@media all and (min-width: 42em) {
+  nav {
+    background: transparent;
+  }
+
+  .tabs-container nav ul li.active {
+    /* box-shadow: inset 0 -3px 0 #5098B3; */
+  }
+
+  .tabs-container nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    border: none;
+    padding: 0;
+  }
+
+  .tabs-container nav ul li {
+    display: inline-block;
+    margin: 0 1rem 0 1rem;
+    padding: 0 0 0.2rem 0;
+    border: none;
+  }
+
+  .tabs-container nav ul li:not(.active) {
+    position: relative;
+    top: auto;
+  }
+
+  .tabs-container nav ul li.active {
+    order: 1;
+  }
+
+  .tabs-container nav ul li.active:after {
+    display: none;
+  }
+}
+
+
+@media all and (max-width:767px){
+    .buttonArea button + button {margin:6px 0;}
+    .buttonArea button {margin:6px 0;}
+    .btnWhite {width: 100%;}
+    .btnBlack {width: 100%; font-size:1em; padding: 8px 32px;}
+
+
+    .formField .columns > *:not(.btnFileupload) {width:auto;}
+
+    .tabNav.type01 {height:70px; flex-direction: column; margin-bottom:24px;overflow: hidden}
+    .tabNav.type01 li a {font-size:1em; padding:13px 26px; line-height: 40px; ;}
+    .tabNav.type01 li:hover, 
+    .tabNav.type01 li.active {border-bottom: solid 3px #222; }
+
+    .tabBox + .contentDescription {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .guideBox {background-color: #fff;;}
+    .guideBox button {margin-left:0; margin-top:20px;}
+    .articleWrap .subject {font-size:1em;}
+    .articleWrap .period {position: relative; text-align: left; right: unset; bottom: unset;}
+    .noticeList {margin-top:40px;}
+    .alignCenter.marginTop160 {margin-top:40px;}
+
+    .stepContainer {height:auto; margin-top: 40px;}
+    .stepContainer ul {display: flex; flex-direction: column; gap: 16px;}
+    .stepContainer ul li {float: none; margin-right:0; width: 100%; padding:24px; text-align:left; background-size: auto 48px; background-position: calc(100% - 24px) center; min-height:auto}
+    .stepContainer ul li:hover {background-position: calc(100% - 24px) 27px; background-size: auto 48px; padding:0;   -webkit-transition: none; transition: none; transform: translate(0, 0);}
+    .stepContainer ul li:hover .stepNumber {padding:24px 24px 80px 24px}
+    .stepContainer ul li:hover .bgBox::before {transform: rotate(10deg);}
+    .stepContainer ul li .stepNumber {margin:0; padding: 0; font-size:1em; font-weight: 400;} 
+    .stepContainer ul li .bgBox .title {font-size:1.25em; font-weight: 600;}
+    .boxBackgroundGray {padding:24px;}
+    .bulletList li {font-size:1em; margin-bottom:25px; padding-left: 20px;}
+    .bulletList li::before {top:11px; height:2px;}
+
+    .mediaSnsTop {flex-direction: column; margin-bottom:45px;}
+    .mediaSnsTop .thumbnail {width:100%;}
+    .mediaSnsTop .thumbnail img {width:100%;}
+    .mediaWrap .snsWrap {flex-direction: column;}
+    .mediaSnsTop .textBox {padding:34px 24px; height:auto;}
+    .mediaSnsTop .textBox .title {font-size:1.675em; margin-bottom: 60px; font-weight:500;}
+    .mediaSnsTop .textBox .title::after {top:110px;}
+    .mediaSnsTop .textBox .desc {font-size:1em; margin-bottom:20px;}
+
+    .list.mediaType ul > li .title {margin-bottom:15px;}
+    .mediaWrap .snsWrap .insta-list ul li {width:45%;}
+    .mediaWrap .snsWrap .kakao {background-color: #f5f5f5; margin:0 -24px -24px -24px; padding: 24px 24px 0 24px;}
+    .mediaWrap .snsWrap .kakao .banner { flex-direction: column; align-items: center;}
+    .mediaWrap .snsWrap .kakao .banner .textWrap {text-align: center;}
+    .mediaWrap .snsWrap .kakao .banner .textWrap .title {text-align: center; font-size:1.675em;}
+    .mediaWrap .kakao-contact {margin:0 -24px; padding:24px;}
+
+    .mediaContentBox {gap: 0; flex-direction: column;}
+    .mediaContentBox .infoWrap {width:100%; }
+    .mediaContentBox .infoWrap figure {background-color: #C9D3DA; height:220px; overflow: hidden; text-align: right;}
+    .mediaContentBox .infoWrap img {}
+    
+}
